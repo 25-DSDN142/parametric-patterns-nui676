@@ -55,6 +55,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   line (150, 0, 150, 200);
   line (0, 150, 200, 150);
 
+  ellipse(25, 25, 20, 20);
   //create all patterns in 0,50 square, easier to recall
   //no recalling, build and translate//cleaner
 
@@ -138,5 +139,9 @@ push();
 strokeWeight(2);
 stroke( 255, 255, 255);//white
 line(45, 0, 45, 200);
+strokeWeight(1);
+line(42, 0, 42, 200);
+strokeWeight(0.5);
+line (47, 0, 47, 200);
 pop();
 }
