@@ -66,11 +66,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   pop();
 
   push();
-  for (let b = 0; b <= 10; b++){
+  for (let b = 0; b <= 100*10; b++){
     strokeWeight(1);
     stroke (0, 0 , 0);
     fill (247, 2, 6);
-    translate (0, 20* b);
+    translate (0, 30* b);
     beginShape ()
     vertex (50, 0);
     vertex (58, 5);
