@@ -12,6 +12,18 @@
     endShape(CLOSE);
  }
 
+function bNotch (){
+  strokeWeight(1);
+  stroke (0, 0 , 0);
+  fill (247, 2, 6);
+  beginShape();
+  vertex (150, 0);
+  vertex (146, 5);
+  vertex (146, 20);
+  vertex (146, 25);
+  endShape(CLOSE);
+}
+
 function setup_wallpaper(pWallpaper) {
  pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
@@ -72,11 +84,47 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   pop();}
 
 
-  //notch facing right
+//notch facing right
 for (let b = 0; b <= 7; b ++){
 push();
 translate(0, 25*b);
 nOtch();
 pop();
 }
+
+for ( let c = 0; c <= 7; c++){
+push();
+translate(-50, 25*c);
+//lets try changing the color of notches from here
+nOtch();
+pop();
+}
+
+for (let d = 0; d <= 3; d++){
+push();
+strokeWeight (1);
+stroke (0, 0, 0);
+fill (247, 2, 6);
+translate (0, 50*d);
+beginShape ();
+vertex (150, 0);
+vertex (200, 50);
+vertex (200, 25);
+vertex (175, 25);
+vertex (175, 50);
+vertex (150, 50);
+vertex (200, 0);
+vertex (175, 0);
+vertex (175, 25);
+vertex (150, 25);
+endShape(CLOSE);
+pop();
+
+for ( let e = 0; e <= 7; e++){
+push();
+translate(0, 25*e);
+bNotch();
+pop();
+}
+
 }
