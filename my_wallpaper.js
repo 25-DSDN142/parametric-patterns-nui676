@@ -41,7 +41,7 @@ function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
 }
 
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
   //grid lines
   strokeWeight(1);
@@ -118,7 +118,7 @@ vertex (175, 0);
 vertex (175, 25);
 vertex (150, 25);
 endShape(CLOSE);
-pop();
+pop();}
 
 for ( let e = 0; e <= 7; e++){
 push();
