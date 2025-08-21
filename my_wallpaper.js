@@ -44,7 +44,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 15*d);
+  translate (0, 50/15*d);//something here is what i need to figure out
   beginShape();
   scale(0.9);
   vertex (25, 0);
