@@ -38,14 +38,14 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(247, 2, 6); //light honeydew green colour
+  background(240, 255, 240); //light honeydew green colour
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
   //grid lines
   strokeWeight(1);
-  stroke(204, 39, 2450)//light purple lines
+  stroke(204, 39, 245)//light purple lines
   line (0, 0, 200, 200);
   line (0, 200, 200, 0);
   line (0, 100, 200, 100);
@@ -55,7 +55,20 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   line (150, 0, 150, 200);
   line (0, 150, 200, 150);
 
-  ellipse(25, 25, 20, 20);
+
+  for (let g = 0; g <= 3; g++){
+  push();
+  translate(0, 50*g)
+  strokeWeight(1);
+  stroke(0, 0, 0);
+  fill(247, 2, 6);
+  ellipse (25, 25, 35, 35);
+  ellipse (25, 25, 30, 30);
+  ellipse (25, 25, 25, 25);
+  ellipse (25, 25, 20, 20);
+  pop();
+  }
+
   //create all patterns in 0,50 square, easier to recall
   //no recalling, build and translate//cleaner
 
@@ -131,17 +144,8 @@ pop();
 
 for ( let f = 0; f<= 7; f++){
 push();
-translate(50, 25*f);
+translate(0, 25*f);
 bNotch();
 pop();}
 
-push();
-strokeWeight(2);
-stroke( 255, 255, 255);//white
-line(45, 0, 45, 200);
-strokeWeight(1);
-line(42, 0, 42, 200);
-strokeWeight(0.5);
-line (47, 0, 47, 200);
-pop();
 }
