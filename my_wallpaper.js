@@ -13,7 +13,7 @@
  }
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+ pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -31,8 +31,6 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-
-  
   //grid lines
   strokeWeight(1);
   stroke(204, 39, 2450)//light purple
@@ -54,7 +52,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, height/50*a);
+  translate (0, height / 25*a);
 //tranlate is what i need to figure out
 //why is dividing the y working?
 //did the scale apply to every single repeated picture giving it that trippy look??
@@ -75,12 +73,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
   //notch facing right
-
-  push();
-  for (let b = 0; b <= 100; b++){
-    translate (50, height/ 50*b);
-    nOtch();
-    pop();
-  }
-
+push();
+for (let a = 0; a <= 8; a ++){
+translate(0, 25*a);
+nOtch();
+pop();
+}
 }
