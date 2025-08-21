@@ -38,12 +38,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   //create all patterns in 0,50 square, easier to recall
   //pasi leaf
+
   push();
-  for (let d = 0; d <= 50; d ++)//hope this works?
+  for (let d = 0; d <= 50; d ++){//hope this works?
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate ( 0, 50*d)
+  translate ( 0, 50*d);
   beginShape();
   vertex (25, 0);
   vertex (25, 50);
@@ -56,6 +57,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex (25, 25);
   vertex (0, 0);
   vertex (25, 0);
-  endShape(CLOSE);
+  endShape(CLOSE);}
   pop();
 }
