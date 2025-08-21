@@ -159,7 +159,7 @@ pop()}
 
 for (let h = 0; h<=7; h++){
 push()
-translate( 100, 25*h)
+translate( 125, 25*h)
 strokeWeight(1);
 stroke(255, 255, 255);
 fill (0, 0, 0);
@@ -175,6 +175,46 @@ vertex (0, 12.5);
 vertex (12.5, 12.5);
 vertex (12.5, 0);
 endShape(CLOSE)
+pop()}
+
+for (let h = 0; h<=7; h++){
+push()
+translate( 150, 25*h)
+strokeWeight(1);
+stroke(255, 255, 255);
+fill (0, 0, 0);
+beginShape();
+vertex (0, 0);// the brain had to work overtime for this
+vertex (25, 25);
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (25, 12.5);
+vertex (25, 0);
+vertex (0, 25);
+vertex (0, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+endShape(CLOSE)
+pop()}
+
+for (let h = 0; h<=7; h++){
+push();
+translate (150, 25*h)
+strokeWeight(1);
+stroke(255, 255, 255);
+fill (0, 0, 0);
+beginShape();
+vertex (25, 0);
+vertex (50, 25);
+vertex (50, 12.5);
+vertex (37.5, 12.5);
+vertex (50, 0);
+vertex (37.5, 0);
+vertex (37.5, 25)
+vertex (25, 25);
+vertex (37.5, 12.5);
+vertex (25, 12.5);
+endShape(CLOSE);
 pop()}
 
 
