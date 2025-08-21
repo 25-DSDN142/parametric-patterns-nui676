@@ -39,12 +39,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //create all patterns in 0,50 square, easier to recall
   //no recalling, build and translate//cleaner
 
-  push();
-  for (let d = 0; d <=4; d ++){//it worked :)
+  //red pasi leaf on the left side
+  push();//remember to pop
+  for (let a = 0; a <=4; a ++){//it worked :)
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 50*d);
+  translate (0, 50*a);
 //tranlate is what i need to figure out
 //why is dividing the y working?
 //did the scale apply to every single repeated picture giving it that trippy look??
@@ -61,6 +62,20 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex (25, 25);
   vertex (0, 0);
   vertex (25, 0);
-  endShape(CLOSE);}
+  endShape(CLOSE);}//always close otherwise broken
   pop();
-}
+
+  push();
+  for (let b = 0; b <= 10; b++){
+    strokeWeight(1);
+    stroke (0, 0 , 0);
+    fill (247, 2, 6);
+    translate (0, 20* b);
+    beginShape ()
+    vertex (50, 0);
+    vertex (58, 5);
+    vertex (58, 15);
+    vertex (50, 20);
+    endShape(CLOSE);}
+    pop();
+  }
