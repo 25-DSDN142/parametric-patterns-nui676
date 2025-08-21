@@ -20,7 +20,7 @@ function bNotch (){
   vertex (150, 0);
   vertex (146, 5);
   vertex (146, 20);
-  vertex (146, 25);
+  vertex (150, 25);
   endShape(CLOSE);
 }
 
