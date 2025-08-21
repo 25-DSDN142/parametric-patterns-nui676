@@ -33,7 +33,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   //grid lines
   strokeWeight(1);
-  stroke(204, 39, 2450)//light purple
+  stroke(204, 39, 2450)//light purple lines
   line (0, 0, 200, 200);
   line (0, 200, 200, 0);
   line (0, 100, 200, 100);
@@ -47,12 +47,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //no recalling, build and translate//cleaner
 
   //red pasi leaf on the left side
-  push();//remember to pop
-  for (let a = 0; a <= 4; a ++){//it worked :)
+  for (let a = 0; a <= 3; a ++){
+  push();//it worked :)
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, height / 25*a);
+  translate (0, 50*a);
 //tranlate is what i need to figure out
 //why is dividing the y working?
 //did the scale apply to every single repeated picture giving it that trippy look??
@@ -68,14 +68,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex (25, 25);
   vertex (0, 0);
   vertex (25, 0);
-  endShape(CLOSE);}//always close otherwise broken
-  pop();
+  endShape(CLOSE);//always close otherwise broken
+  pop();}
 
 
   //notch facing right
+for (let b = 0; b <= 7; b ++){
 push();
-for (let a = 0; a <= 8; a ++){
-translate(0, 25*a);
+translate(0, 25*b);
 nOtch();
 pop();
 }
