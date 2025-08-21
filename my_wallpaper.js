@@ -21,9 +21,41 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
 
 
-line (0, 0, 200, 200);
-line (0, 200, 200, 0);
+  
+  //grid lines
+  strokeWeight(1);
+  stroke(204, 39, 2450)//light purple
+  line (0, 0, 200, 200);
+  line (0, 200, 200, 0);
+  line (0, 100, 200, 100);
+  line (100, 0, 100, 200);
+  line (50, 0, 50, 200);
+  line (0, 50, 200, 50);
+  line (150, 0, 150, 200);
+  line (0, 150, 200, 150);
+
+  //create all patterns in 0,50 square, easier to recall
+  //pasi leaf
+  push();
+  for (let d = 0; d <= 50; d ++)//hope this works?
+  strokeWeight (1);
+  stroke (0, 0, 0)//black
+  fill (247, 2, 6)// red
+  translate ( 0, 50*d)
+  beginShape();
+  vertex (25, 0);
+  vertex (25, 50);
+  vertex (50, 50);
+  vertex (25, 25);
+  vertex (50, 25);
+  vertex (50, 0);
+  vertex (0, 50);
+  vertex (0, 25);
+  vertex (25, 25);
+  vertex (0, 0);
+  vertex (25, 0);
+  endShape(CLOSE);
+  pop();
 }
