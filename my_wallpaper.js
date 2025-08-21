@@ -40,11 +40,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //no recalling, build and translate//cleaner
 
   push();
-  for (let d = 0; d <=50; d ++){//it worked :)
+  for (let d = 0; d <=10; d ++){//it worked :)
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 50/15*d);//something here is what i need to figure out
+  translate (0, 10/15*d);//something here is what i need to figure out
   beginShape();
   scale(0.9);
   vertex (25, 0);
