@@ -1,7 +1,16 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
 
+ function nOtch (){
+  strokeWeight(1);
+    stroke (0, 0 , 0);
+    fill (247, 2, 6);
+    beginShape ();
+    vertex (50, 0);
+    vertex (54, 5);
+    vertex (54, 20);
+    vertex (50, 25);
+    endShape(CLOSE);
+ }
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -41,15 +50,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   //red pasi leaf on the left side
   push();//remember to pop
-  for (let a = 0; a <=4; a ++){//it worked :)
+  for (let a = 0; a <= 4; a ++){//it worked :)
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 50*a);
+  translate (0, height/50*a);
 //tranlate is what i need to figure out
 //why is dividing the y working?
 //did the scale apply to every single repeated picture giving it that trippy look??
-//something to think about
   beginShape();
   vertex (25, 0);
   vertex (25, 50);
@@ -65,17 +73,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   endShape(CLOSE);}//always close otherwise broken
   pop();
 
+
+  //notch facing right
+
   push();
-  for (let b = 0; b <= 50; b++){
-    strokeWeight(1);
-    stroke (0, 0 , 0);
-    fill (247, 2, 6);
-    translate (0, 50* b);
-    beginShape ()
-    vertex (50, 0);
-    vertex (58, 5);
-    vertex (58, 15);
-    vertex (50, 20);
-    endShape(CLOSE);}
+  for (let b = 0; b <= 100; b++){
+    translate (50, height/ 50*b);
+    nOtch();
     pop();
   }
+
+}
