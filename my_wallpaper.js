@@ -44,7 +44,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 100/50*d);//something here is what i need to figure out
+  translate (0, 180/50*d);
+//tranlate is what i need to figure out
+//why is dividing the y working?
+//did the scale apply to every single repeated picture giving it that trippy look??
+//something to think about
   beginShape();
   vertex (25, 0);
   vertex (25, 50);
