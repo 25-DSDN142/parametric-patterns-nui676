@@ -38,7 +38,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(231, 242, 12); //yellow? more mimi than yellow, ew
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
@@ -55,97 +55,65 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   line (150, 0, 150, 200);
   line (0, 150, 200, 150);
 
+for (let h = 0; h<=7; h++){
+push()
+translate( 0, 25*h)
+strokeWeight(1);
+stroke(255, 255, 255);
+fill (0, 0, 0);
+beginShape();
+vertex (0, 0);// the brain had to work overtime for this
+vertex (25, 25);
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (25, 12.5);
+vertex (25, 0);
+vertex (0, 25);
+vertex (0, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+endShape(CLOSE)
+pop()}
 
-  for (let g = 0; g <= 3; g++){
-  push();
-  translate(0, 50*g)
-  strokeWeight(1);
-  stroke(0, 0, 0);
-  fill(247, 2, 6);
-  ellipse (25, 25, 35, 35);
-  ellipse (25, 25, 30, 30);
-  ellipse (25, 25, 25, 25);
-  ellipse (25, 25, 20, 20);
-  pop();
-  }
-
-  //create all patterns in 0,50 square, easier to recall
-  //no recalling, build and translate//cleaner
-
-  //red pasi leaf on the left side
-  for (let a = 0; a <= 3; a ++){
-  push();//it worked :)
-  strokeWeight (1);
-  stroke (0, 0, 0)//black
-  fill (247, 2, 6)// red
-  translate (0, 50*a);
-//tranlate is what i need to figure out
-//why is dividing the y working?
-//did the scale apply to every single repeated picture giving it that trippy look??
-  beginShape();
-  vertex (25, 0);
-  vertex (25, 50);
-  vertex (50, 50);
-  vertex (25, 25);
-  vertex (50, 25);
-  vertex (50, 0);
-  vertex (0, 50);
-  vertex (0, 25);
-  vertex (25, 25);
-  vertex (0, 0);
-  vertex (25, 0);
-  endShape(CLOSE);//always close otherwise broken
-  pop();}
+for (let h = 0; h<=7; h++){
+push()
+translate( 50, 25*h)
+strokeWeight(1);
+stroke(255, 255, 255);
+fill (0, 0, 0);
+beginShape();
+vertex (0, 0);
+vertex (25, 25);
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (25, 12.5);
+vertex (25, 0);
+vertex (0, 25);
+vertex (0, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+endShape(CLOSE)
+pop()}
 
 
-//notch facing right
-for (let b = 0; b <= 7; b ++){
+for (let h = 0; h<=7; h++){
 push();
-translate(0, 25*b);
-nOtch();
-pop();
-}
-
-for ( let c = 0; c <= 7; c++){
-push();
-translate(-50, 25*c);
-//lets try changing the color of notches from here
-nOtch();
-pop();
-}
-
-for (let d = 0; d <= 3; d++){
-push();
-strokeWeight (1);
-stroke (0, 0, 0);
-fill (247, 2, 6);
-translate (0, 50*d);
-beginShape ();
-vertex (150, 0);
-vertex (200, 50);
-vertex (200, 25);
-vertex (175, 25);
-vertex (175, 50);
-vertex (150, 50);
-vertex (200, 0);
-vertex (175, 0);
-vertex (175, 25);
-vertex (150, 25);
+translate (0, 25*h)
+strokeWeight(1);
+stroke(255, 255, 255);
+fill (0, 0, 0);
+beginShape();
+vertex (25, 0);
+vertex (50, 25);
+vertex (50, 12.5);
+vertex (37.5, 12.5);
+vertex (50, 0);
+vertex (37.5, 0);
+vertex (37.5, 25)
+vertex (25, 25);
+vertex (37.5, 12.5);
+vertex (25, 12.5);
 endShape(CLOSE);
-pop();}
-
-for ( let e = 0; e <= 7; e++){
-push();
-translate(0, 25*e);
-bNotch();
-pop();
-}
-
-
-for ( let f = 0; f<= 7; f++){
-push();
-translate(0, 25*f);
-bNotch();
-pop();}
+pop()}
 
 }
