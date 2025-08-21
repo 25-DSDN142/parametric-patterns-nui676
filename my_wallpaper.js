@@ -40,11 +40,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //no recalling, build and translate//cleaner
 
   push();
-  for (let d = 0; d <=100; d ++){//it worked :)
+  for (let d = 0; d <=4; d ++){//it worked :)
   strokeWeight (1);
   stroke (0, 0, 0)//black
   fill (247, 2, 6)// red
-  translate (0, 180/50*d);
+  translate (0, 50*d);
 //tranlate is what i need to figure out
 //why is dividing the y working?
 //did the scale apply to every single repeated picture giving it that trippy look??
