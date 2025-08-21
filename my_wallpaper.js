@@ -37,7 +37,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   line (0, 150, 200, 150);
 
   //create all patterns in 0,50 square, easier to recall
-  //pasi leaf
+  //no recalling, build and translate//cleaner
 
   push();
   for (let d = 0; d <=50; d ++){//it worked :)
