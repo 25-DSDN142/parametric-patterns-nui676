@@ -38,7 +38,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(247, 2, 6); //light honeydew green colour
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
@@ -127,4 +127,16 @@ bNotch();
 pop();
 }
 
+
+for ( let f = 0; f<= 7; f++){
+push();
+translate(50, 25*f);
+bNotch();
+pop();}
+
+push();
+strokeWeight(2);
+stroke( 255, 255, 255);//white
+line(45, 0, 45, 200);
+pop();
 }
