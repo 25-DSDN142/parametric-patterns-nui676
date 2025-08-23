@@ -1,7 +1,7 @@
 //your parameter variables go here!
-var bGround = ("red")
-var sWeight = (1) 
-var strokeCol = (0, 0, 0)
+var bGround = ("red");
+var sWeight = (1);
+var strokeCol = (0, 0, 0);
 
 
 function pasiLeafr(){
