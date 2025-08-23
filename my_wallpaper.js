@@ -1,5 +1,41 @@
 //your parameter variables go here!
 var bGround = ("red")
+var sWeight = (1) 
+var strokeCol = (0, 0, 0)
+
+
+function pasiLeafr(){
+strokeWeight (sWeight);
+stroke (strokeCol)
+beginShape();
+vertex (25, 0);
+vertex (50, 25);
+vertex (50, 12.5);
+vertex (37.5, 12.5);
+vertex (50, 0);
+vertex (37.5, 0);
+vertex (37.5, 25)
+vertex (25, 25);
+vertex (37.5, 12.5);
+vertex (25, 12.5);
+endShape(CLOSE);}
+
+function pasiLeafl (){
+strokeWeight (sWeight);
+stroke (strokeCol);
+beginShape();
+vertex (0, 0);// the brain had to work overtime for this
+vertex (25, 25);
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (25, 12.5);
+vertex (25, 0);
+vertex (0, 25);
+vertex (0, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+endShape(CLOSE);
+}
 
 function setup_wallpaper(pWallpaper) {
  pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -23,21 +59,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 for (let h = 0; h<=7; h++){
 push()
 translate( 0, 25*h)
-strokeWeight(0.5);
-stroke(255, 2552, 255);
-fill (0, 0, 0);
-beginShape();
-vertex (0, 0);// the brain had to work overtime for this
-vertex (25, 25);
-vertex (12.5, 25);
-vertex (12.5, 12.5);
-vertex (25, 12.5);
-vertex (25, 0);
-vertex (0, 25);
-vertex (0, 12.5);
-vertex (12.5, 12.5);
-vertex (12.5, 0);
-endShape(CLOSE)
+pasiLeafr();
 pop()}
 
 for (let h = 0; h<=7; h++){
