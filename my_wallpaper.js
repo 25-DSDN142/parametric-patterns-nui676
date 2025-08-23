@@ -57,8 +57,8 @@ function wallpaper_background() {
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
   
 for (let h = 0; h<=7; h++){
-push()
-translate( 0, 25*h)
+push();
+translate( -10, 25*h);
 pasiLeafr();
 pop()}
 
