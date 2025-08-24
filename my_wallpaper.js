@@ -1,26 +1,30 @@
 //your parameter variables go here!
 var bGround = (240, 16, 12); //background colour< that was meant to be red, why not red?
 
-var sW1 = (1); //strokeweight
+var sW1 = (1); //strokeweight.
 var sW2 = (1); //""
 var sW3 = (2); //""
 
-var sC1 = (0, 0, 0); //stroke colour
+var sC1 = (0, 0, 0); //stroke colour.
 var sC2 = (1); //""
 var sC3 = (2); //""
 
-var fill1 = (255, 255, 255); //fill colour
-var fill2 = (255, 255, 255); //""
-var fill3 = (255, 255, 255); //""
+var fil1 = (255, 255, 255); //fill colour.
+var fil2 = (255, 255, 255); //""
+var fil3 = (255, 255, 255); //""
 
-var rOt1 = (0); //rotatiton
+var rOt1 = (0); //rotatiton.
 var rOt2 = (0); //""
 var rOt3 = (0); //""
+
+//need a if statment
 
 //test these column sets, L = pasileafl, R = pasiLeafr
 //L, L, R, R, L, L, R, R
 //R, L, R, L, R, L, R, L
 
+//pasi leaf pattern shape, use translate jitsu to call this.
+//figured out leaving out stroke,weight and fill i could imput variables seperatly to each column, wow!
 
 function pasiLeafr(){
 beginShape();
@@ -36,9 +40,12 @@ vertex (37.5, 12.5);
 vertex (25, 12.5);
 endShape(CLOSE);}
 
+
+//got to remember i drew each leaf at different spots, calling them gets funky
+//
 function pasiLeafl (){
 beginShape();
-vertex (0, 0);// the brain had to work overtime for this
+vertex (0, 0);
 vertex (25, 25);
 vertex (12.5, 25);
 vertex (12.5, 12.5);
@@ -70,75 +77,93 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
-
 //columns start from left.
-
-
-//first column/pasiLeafr
+//column 1.
 for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
 strokeWeight (sW2);
 stroke (sC1);
-fill (fill1);
-rotate (rOt1);//don't know why this works but we're running with it
+fill (fil1);
+rotate (rOt1);//don't know why this works but we're running with it.
 pasiLeafr()
 pop();
 };
 
-//coulmn two//pasileafr
+//column 2.
 for (let h = 0; h<=7; h++){
 push();
 translate (25, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 rotate (rOt2);
 pasiLeafl();
 pop();
 };
 
-//third column pasiLeafl
+//column 3
 for (let h = 0; h<=7; h++){
 push();
-translate( 25, 25*h)
+translate( 25, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafr();
 pop();
 };
 
-//fourth column/pasiLeafl
+//column 4
 for (let h = 0; h<=7; h++){
 push();
 translate( 75, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafl();
 pop();
 };
 
-//fifth column/pasiLefr
+//column 5
 for (let h = 0; h<=7; h++){
 push();
-translate (75, 25*h)
+translate (75, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafr();
 pop();
 };
 
-//sixthcolumn/pasiLeafr
+//column 6
 for (let h = 0; h<=7; h++){
-push()
-translate( 100, 25*h)
+push();
+translate( 100, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafr();
 pop();
 };
 
-//seventh column/pasiLeafl
+//column 7
 for (let h = 0; h<=7; h++){
-push()
-translate( 150, 25*h)
+push();
+translate( 150, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafl();
 pop();
 };
 
-//eigth column/pasiLeafl
+//column 8
 for (let h = 0; h<=7; h++){
 push();
-translate (175, 25*h)
+translate (175, 25*h);
+strokeWeight (sW2);
+stroke (sC1);
+fill (fil1);
 pasiLeafl();
 pop();
 };
