@@ -58,29 +58,17 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   
 for (let h = 0; h<=7; h++){
 push();
-translate( -10, 25*h);
+translate(-25, 25*h);
 pasiLeafr();
-pop()}
+pop();
+};
 
 for (let h = 0; h<=7; h++){
-push()
+push();
 translate( 50, 25*h)
-strokeWeight(1);
-stroke(255, 255, 255);
-fill ("yellow");
-beginShape();
-vertex (0, 0);
-vertex (25, 25);
-vertex (12.5, 25);
-vertex (12.5, 12.5);
-vertex (25, 12.5);
-vertex (25, 0);
-vertex (0, 25);
-vertex (0, 12.5);
-vertex (12.5, 12.5);
-vertex (12.5, 0);
-endShape(CLOSE)
-pop()}
+pasiLeafl();
+pop();
+};
 
 
 for (let h = 0; h<=7; h++){
