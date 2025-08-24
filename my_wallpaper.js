@@ -1,5 +1,5 @@
 //your parameter variables go here!
-
+//all this here is actually dumb, realised my "variables" don't do jack
 //background colour
 let bGround = color = (247, 11, 7);//that was meant to be red, why not red?
 //stroke weight variables.//only thing that works
