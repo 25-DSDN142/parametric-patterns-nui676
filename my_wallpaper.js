@@ -2,7 +2,7 @@
 var bGround = ("red"); //background colour
 var sW1 = (1); //strokeweight 1
 var sW2 = (10);
-var sW3 = (1);
+var sW3 = (5);
 var sW4 = (1);
 var sC1 = (0, 0, 0); //stroke1
 var sC2 = (1);
@@ -71,8 +71,9 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
+strokeWeight (sW3)
 rotate (rOt1);//don't know why this works but we're running with it
-pasiLeafr(sW1, sW2);
+pasiLeafl()
 pop();
 };
 
