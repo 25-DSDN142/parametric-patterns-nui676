@@ -4,23 +4,26 @@
 
 var lineWidth = 1;
 var rOt1 = 5;
-var R = 247 // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
-var G = 147 // so if i tutu here then i can change colours?
-var B = 6 // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
-
-//list of colours to make it easier.
-// (0, 0, 0) white
-// (255, 255, 255) black
+var R = 247; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
+var G = 147; // so if i tutu here then i can change colours?
+var B = 6; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
+var lineColour = 155; // black, grey and white work, we only need one value
+var C1 = 25;
+var C2 = 50;
+var C3 = 75;
+var C4 = 100;
+var C5 = 125;
+var C6 = 150;
+//list of colours to make it easier
 // (247, 11, 7) red
 // (7, 11, 247) blue
 // (247, 7, 215) pink
 // (231, 247, 7) yellow
 // (7, 247, 11) green
 // (155, 7, 247) purple
-// (230, 225, 213) light grey
 // (247, 147, 6) orange
 
-//need a if statment.
+//need a if statement.
 //if stroke is this colour then fill is this?
 //if background is this colour then rotate is this? don't even know what the helly rotate does, im thinking rotate but something tells me this is not it
 
@@ -90,18 +93,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(247, 147, 6); //background colour 
+  background(R, G, B); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
+
 for (let a = 0; a <= 7; a++){
 push ();
-translate (0, 25*a);
+translate (C2, C1*a);//column
 strokeWeight (lineWidth)
-stroke (255, 255, 255);
+stroke (lineColour);
 fill (R, G, B);
-pasiLeafr ();
+rotate (rOt1);
+pasiLeafl ();
 pop ();
 }
 
