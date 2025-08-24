@@ -33,7 +33,7 @@ let rOt4 = (0);
 // (7, 247, 11) green
 // (155, 7, 247) purple
 // (230, 225, 213) light grey
-// (247, 147, 7) orange
+//  orange
 
 //need a if statment.
 
@@ -101,7 +101,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(bGround); //background colour
+  background(247, 147, 6); //background colour
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
