@@ -1,5 +1,5 @@
 //your parameter variables go here!
-var bGround = (240, 16, 12); //background colour
+var bGround = (240, 16, 12); //background colour< that was meant to be red, why not red?
 
 var sW1 = (1); //strokeweight
 var sW2 = (1); //""
