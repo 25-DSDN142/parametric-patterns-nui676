@@ -17,14 +17,38 @@ var rOt1 = (0); //rotatiton.
 var rOt2 = (0); //""
 var rOt3 = (0); //""
 
-//need a if statment
+//list of colours to make it easier.
+//
 
-//test these column sets, L = pasileafl, R = pasiLeafr
-//L, L, R, R, L, L, R, R
-//R, L, R, L, R, L, R, L
+//need a if statment.
+
+//test these column sets
+//L = pasileafl, R = pasiLeafr.
+//L, L, R, R, L, L, R, R.
+//R, L, R, L, R, L, R, L.
+//R, R, L, L, R, R, L, L.
+//L, R, L, R, L, R, L, R.
 
 //pasi leaf pattern shape, use translate jitsu to call this.
 //figured out leaving out stroke,weight and fill i could imput variables seperatly to each column, wow!
+//got to remember i drew each leaf at different spots, calling them gets funky
+//pasiLeafl is allways going to be called from 0, 0, 1st column
+//pasiLeafr is called from 25, 0. 2nd column
+
+function pasiLeafl (){
+beginShape();
+vertex (0, 0);
+vertex (25, 25);
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (25, 12.5);
+vertex (25, 0);
+vertex (0, 25);
+vertex (0, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+endShape(CLOSE);
+}
 
 function pasiLeafr(){
 beginShape();
@@ -38,23 +62,6 @@ vertex (37.5, 25)
 vertex (25, 25);
 vertex (37.5, 12.5);
 vertex (25, 12.5);
-endShape(CLOSE);}
-
-
-//got to remember i drew each leaf at different spots, calling them gets funky
-//
-function pasiLeafl (){
-beginShape();
-vertex (0, 0);
-vertex (25, 25);
-vertex (12.5, 25);
-vertex (12.5, 12.5);
-vertex (25, 12.5);
-vertex (25, 0);
-vertex (0, 25);
-vertex (0, 12.5);
-vertex (12.5, 12.5);
-vertex (12.5, 0);
 endShape(CLOSE);
 }
 
