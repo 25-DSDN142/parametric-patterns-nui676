@@ -1,4 +1,5 @@
 //your parameter variables go here!
+
 //background colour
 var bGround = (240, 16, 12);//that was meant to be red, why not red?
 //stroke weight variables.
@@ -57,16 +58,16 @@ endShape(CLOSE);
 
 function pasiLeafr(){
 beginShape();
-vertex (25, 0);
-vertex (50, 25);
-vertex (50, 12.5);
-vertex (37.5, 12.5);
-vertex (50, 0);
-vertex (37.5, 0);
-vertex (37.5, 25)
+vertex (0, 0);
 vertex (25, 25);
-vertex (37.5, 12.5);
 vertex (25, 12.5);
+vertex (12.5, 12.5);
+vertex (12.5, 0);
+vertex (25, 0);
+vertex (0, 25)
+vertex (12.5, 25);
+vertex (12.5, 12.5);
+vertex (0, 12.5);
 endShape(CLOSE);
 }
 
@@ -89,94 +90,13 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
-//columns start from left.
-//column 1.
-for (let h = 0; h<=7; h++){
-push();
-translate(-25, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-rotate (rOt1);//don't know why this works but we're running with it.
-pasiLeafr()
-pop();
-};
+  push();
+  translate(25, 25);
+  pasiLeafr();
+  pop();
 
-//column 2.
-for (let h = 0; h<=7; h++){
-push();
-translate (25, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-rotate (rOt2);
-pasiLeafl();
-pop();
-};
-
-//column 3
-for (let h = 0; h<=7; h++){
-push();
-translate( 25, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafr();
-pop();
-};
-
-//column 4
-for (let h = 0; h<=7; h++){
-push();
-translate( 75, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafl();
-pop();
-};
-
-//column 5
-for (let h = 0; h<=7; h++){
-push();
-translate (75, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafr();
-pop();
-};
-
-//column 6
-for (let h = 0; h<=7; h++){
-push();
-translate( 100, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafr();
-pop();
-};
-
-//column 7
-for (let h = 0; h<=7; h++){
-push();
-translate( 150, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafl();
-pop();
-};
-
-//column 8
-for (let h = 0; h<=7; h++){
-push();
-translate (175, 25*h);
-strokeWeight (sW2);
-stroke (sC1);
-fill (fil1);
-pasiLeafl();
-pop();
-};
+  push();
+  translate (50, 25);
+  pasiLeafl();
+  pop()
 }
