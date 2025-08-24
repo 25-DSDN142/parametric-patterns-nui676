@@ -98,4 +98,24 @@ for (let a = 0; a <= 7; a++){
   pasiLeafr();
   pop();
 }
+
+for (let b = 0; b <= 7; b++){
+  push();
+  translate (25, 25*b);
+  strokeWeight (1);
+  stroke (7, 247, 11);
+  fill (255, 255, 255);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (50*c, 50*c);
+  strokeWeight(1);
+  stroke (155, 7, 247);
+  fill (255, 255, 255);
+  pasiLeafr();
+  pop();
+}
 }
