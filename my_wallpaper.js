@@ -1,30 +1,32 @@
 //your parameter variables go here!
 
 //background colour
-let bGround = color = (240, 16, 12);//that was meant to be red, why not red?
+let bGround = color = (247, 11, 7);//that was meant to be red, why not red?
 //stroke weight variables.
-let sW1 = (2);
-var sW2 = (1);
-var sW3 = (2);
-var sW4 = (3);
+let sW1 = (1);
+let sW2 = (2);
+let sW3 = (2);
+let sW4 = (3);
 //stroke colour variables
-let sC1 = color = (0, 0, 0);
-var sC2 = (1);
-var sC3 = (2); 
-var sC4 = (3);
+let sC1 = color = (0, 0, 0);//black
+let sC2 = color = (247, 11, 7);//red
+let sC3 = color = (2); 
+let sC4 = color = (3);
 //fill colour.
-let fil1 = (255, 255, 255);
-var fil2 = (255, 255, 255);
-var fil3 = (255, 255, 255);
-var fil4 = (255, 255, 255);
+let fil1 = color = (255, 255, 255);//white
+let fil2 = color = (255, 255, 255);
+let fil3 = color = (255, 255, 255);
+let fil4 = color =(255, 255, 255);
 //rotatiton variables.
-let rOt1 = (1);
-var rOt2 = (0);
-var rOt3 = (0);
-var rOt4 = (0);
+let rOt1 = (5);//i dont quite know what this does but im going with it
+let rOt2 = (25);
+let rOt3 = (5);
+let rOt4 = (0);
 
 //list of colours to make it easier.
-//
+// (0, 0, 0) white
+// (255, 255, 255) black
+// (247, 11, 7) red
 
 //need a if statment.
 
@@ -105,6 +107,106 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   for (let a = 0; a <= 7; a++){
   push();
   translate (25, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+  //column3
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (40, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column4
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (65, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+   //column5
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (80, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column6
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (105, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+   //column7
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (120, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column8
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (145, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+  //column9
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (160, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column10
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (185, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil2);
+  rotate (rOt2)
   pasiLeafr();
   pop();
   }
