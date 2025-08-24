@@ -2,17 +2,17 @@
 
 //background colour
 let bGround = color = (247, 11, 7);//that was meant to be red, why not red?
-//stroke weight variables.
+//stroke weight variables.//only thing that works
 let sW1 = (1);
 let sW2 = (2);
 let sW3 = (2);
 let sW4 = (3);
-//stroke colour variables
+//stroke colour variables//this isn't work, vhy?
 let sC1 = color = (0, 0, 0);//black
 let sC2 = color = (247, 11, 7);//red
 let sC3 = color = (2); 
 let sC4 = color = (3);
-//fill colour.
+//fill colour.//this doesn't work either, all show, no go
 let fil1 = color = (255, 255, 255);//white
 let fil2 = color = (255, 255, 255);
 let fil3 = color = (255, 255, 255);
