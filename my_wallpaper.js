@@ -91,12 +91,13 @@ function wallpaper_background() {
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
   push();
-  translate(25, 25);
+  translate(0, 25);
   pasiLeafr();
   pop();
 
   push();
-  translate (50, 25);
+  translate (0, 25);
   pasiLeafl();
-  pop()
+  pop();
+
 }
