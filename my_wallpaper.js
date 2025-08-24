@@ -1,7 +1,7 @@
 //your parameter variables go here!
 var bGround = ("red"); //background colour
 var sW1 = (1); //strokeweight 1
-var sW2 = (1);
+var sW2 = (10);
 var sW3 = (1);
 var sW4 = (1);
 var sC1 = (0, 0, 0); //stroke1
@@ -30,8 +30,6 @@ vertex (25, 12.5);
 endShape(CLOSE);}
 
 function pasiLeafl (){
-strokeWeight (sW1);
-stroke (sC1);
 beginShape();
 vertex (0, 0);// the brain had to work overtime for this
 vertex (25, 25);
@@ -74,7 +72,7 @@ for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
 rotate (rOt1);//don't know why this works but we're running with it
-pasiLeafr();
+pasiLeafr(sW1, sW2);
 pop();
 };
 
