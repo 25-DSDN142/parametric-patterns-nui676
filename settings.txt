@@ -52,3 +52,123 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+//wallpaper1
+  //column1
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (0, 25*a);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt1)
+  pasiLeafl();
+  pop();}
+
+  //column2
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (25, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+  //column3
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (40, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column4
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (65, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+   //column5
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (80, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column6
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (105, 25*a);
+  strokeWeight (sW1);
+  stroke (sC2);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+   //column7
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (120, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column8
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (145, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
+
+  //column9
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (160, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil3);
+  rotate (rOt3)
+  pasiLeafl();
+  pop();
+  }
+
+  //column10
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (185, 25*a);
+  strokeWeight (sW1);
+  stroke (sC3);
+  fill (fil2);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();
+  }
