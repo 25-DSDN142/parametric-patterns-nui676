@@ -1,15 +1,15 @@
 //your parameter variables go here!
-var bGround = (252, 12, 8); //background colour
+var bGround = (240, 16, 12); //background colour
 var sW1 = (1); //strokeweight 1
 var sW2 = (1);
 var sC1 = (0, 0, 0); //stroke1
 var sC2 = (1);
 var fill1 = (255, 255, 255);
 var fill2 = (255, 255, 255);
-var rOt1 = (2); //rotatitons1
-var rOt2 = (5); //rotations2
-
-
+var rOt1 = (0); //rotatitons1
+var rOt2 = (0); //rotations2
+//L, L, R, R, L, L, R, R
+//R, L, R, L, R, L, R, L
 function pasiLeafr(){
 beginShape();
 vertex (25, 0);
@@ -70,7 +70,7 @@ strokeWeight (sW2);
 stroke (sC1);
 fill (fill1);
 rotate (rOt1);//don't know why this works but we're running with it
-pasiLeafl()
+pasiLeafr()
 pop();
 };
 
@@ -86,8 +86,8 @@ pop();
 //third column pasiLeafl
 for (let h = 0; h<=7; h++){
 push();
-translate( 50, 25*h)
-pasiLeafl();
+translate( 25, 25*h)
+pasiLeafr();
 pop();
 };
 
