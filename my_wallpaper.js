@@ -88,44 +88,5 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
-//
-for (let a = 0; a <= 7; a++){
-  push ();
-  translate (25*a, 25*a);
-  strokeWeight(1);
-  stroke (247, 147, 6);
-  fill (247, 11, 7);
-  pasiLeafr();
-  pop();
-}
 
-for (let b = 0; b <= 7; b++){
-  push();
-  translate (25, 25*b);
-  strokeWeight (1);
-  stroke (7, 247, 11);
-  fill (255, 255, 255);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (50*c, 50*c);
-  strokeWeight(1);
-  stroke (155, 7, 247);
-  fill (255, 255, 255);
-  pasiLeafr();
-  pop();
-}
-
-for (let d = 0; d <= 7; d++){
-  push ();
-  translate (30, 30*d);
-  strokeWeight(1);
-  stroke (155, 7, 247);
-  fill (247, 7, 215)
-  pasiLeafl();
-  pop();
-}
 }
