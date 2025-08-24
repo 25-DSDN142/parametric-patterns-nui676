@@ -118,4 +118,14 @@ for (let c = 0; c <= 7; c++){
   pasiLeafr();
   pop();
 }
+
+for (let d = 0; d <= 7; d++){
+  push ();
+  translate (100, 25*d);
+  strokeWeight(1);
+  stroke (155, 7, 247);
+  fill (255, 255, 255);
+  pasiLeafl();
+  pop();
+}
 }
