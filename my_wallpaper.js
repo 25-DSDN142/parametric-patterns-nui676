@@ -1,6 +1,4 @@
 //your parameter variables go here!
-
-var bGround = color (155, 7, 247);
 //list of colours to make it easier.
 // (0, 0, 0) white
 // (255, 255, 255) black
@@ -83,7 +81,7 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
 
-  background(bGround); //background colour
+  background(247, 147, 6); //background colour
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
