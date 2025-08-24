@@ -90,14 +90,16 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
+  //column1
+  for (let a = 0; a <= 7; a++){
   push();
-  translate(0, 25);
-  pasiLeafr();
-  pop();
+  translate(0, 25*a);
+  pasiLeafl();
+  pop();}
 
   push();
   translate (0, 25);
-  pasiLeafl();
+  pasiLeafr();
   pop();
 
 }
