@@ -11,13 +11,13 @@ var B = 11; // have to figure out how to change each pasiLeaf L or R seperately?
 var S = 250;
 var Q = 147;
 //list of colours to make it easier
-// (250, 11, 7) red
-// (7, 11, 250) blue
-// (247, 7, 250) light purple
-// (250, 250, 7) yellow
-// (7, 247, 11) greenish
-// (147, 7, 250) purple
-// (247, 147, 7) orange
+// (250, 11, 7) red / (S, B, R)
+// (7, 11, 250) blue / (R, B, S)
+// (247, 7, 250) light purple / (G, R, S)
+// (250, 250, 7) yellow / (S, S, R)
+// (7, 247, 11) greenish / (R, G, B)
+// (147, 7, 250) purple / (Q, R, S)
+// (247, 147, 7) orange / (G, Q, R)
 
 var lineColour = 155; // black, grey and white work, we only need one value
 //x and y values for translate jitsu
@@ -106,7 +106,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R, G, B); //background colour 
+  background(R, B, S); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
