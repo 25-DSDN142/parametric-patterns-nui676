@@ -70,25 +70,11 @@ pasiLeafl();
 pop();
 };
 
-
+//coulmn two//pasileafr
 for (let h = 0; h<=7; h++){
 push();
-translate (25, 25*h)
-strokeWeight(1);
-stroke(255, 255, 255);
-fill (0, 0, 0);
-beginShape();
-vertex (25, 0);
-vertex (50, 25);
-vertex (50, 12.5);
-vertex (37.5, 12.5);
-vertex (50, 0);
-vertex (37.5, 0);
-vertex (37.5, 25)
-vertex (25, 25);
-vertex (37.5, 12.5);
-vertex (25, 12.5);
-endShape(CLOSE);
+translate (2, 25*h)
+pasiLeafl();
 pop()}
 
 
