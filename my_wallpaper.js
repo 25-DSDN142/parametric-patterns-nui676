@@ -1,24 +1,24 @@
 //your parameter variables go here!
 
 //background colour
-var bGround = (240, 16, 12);//that was meant to be red, why not red?
+let bGround = color = (240, 16, 12);//that was meant to be red, why not red?
 //stroke weight variables.
-var sW1 = (1);
+let sW1 = (2);
 var sW2 = (1);
 var sW3 = (2);
 var sW4 = (3);
 //stroke colour variables
-var sC1 = (0, 0, 0);
+let sC1 = color = (0, 0, 0);
 var sC2 = (1);
 var sC3 = (2); 
 var sC4 = (3);
 //fill colour.
-var fil1 = (255, 255, 255);
+let fil1 = (255, 255, 255);
 var fil2 = (255, 255, 255);
 var fil3 = (255, 255, 255);
 var fil4 = (255, 255, 255);
 //rotatiton variables.
-var rOt1 = (0);
+let rOt1 = (1);
 var rOt2 = (0);
 var rOt3 = (0);
 var rOt4 = (0);
@@ -93,13 +93,20 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   //column1
   for (let a = 0; a <= 7; a++){
   push();
-  translate(0, 25*a);
+  translate (0, 25*a);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt1)
   pasiLeafl();
   pop();}
 
+  //column2
+  for (let a = 0; a <= 7; a++){
   push();
-  translate (0, 25);
+  translate (25, 25*a);
   pasiLeafr();
   pop();
+  }
 
 }
