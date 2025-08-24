@@ -1,4 +1,6 @@
 //your parameter variables go here!
+// color variables need to be noted, and placed in my symbol not here. 
+
 //list of colours to make it easier.
 // (0, 0, 0) white
 // (255, 255, 255) black
@@ -83,12 +85,16 @@ function wallpaper_background() {
 
   background(247, 147, 6); //background colour
 
+  
 }
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 for (let a = 0; a <= 7; a++){
 push ();
-translate (10, 25*a);
+translate (X*a, Y*a);
+strokeWeight (1)
+stroke (outy);
+fill (R, G, B);
 pasiLeafr ();
 pop ();
 }
