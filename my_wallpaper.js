@@ -82,6 +82,7 @@ pop();
 for (let h = 0; h<=7; h++){
 push();
 translate (25, 25*h);
+rotate (rOt2);
 pasiLeafl();
 pop();
 };
