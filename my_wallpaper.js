@@ -1,18 +1,13 @@
 //your parameter variables go here!
-var bGround = ("red"); //background colour
+var bGround = (252, 12, 8); //background colour
 var sW1 = (1); //strokeweight 1
-var sW2 = (10);
-var sW3 = (5);
-var sW4 = (1);
+var sW2 = (1);
 var sC1 = (0, 0, 0); //stroke1
 var sC2 = (1);
-var sC3 = (1);
-var sC4 = (1);
-var fill1 = (250, 250, 250);
+var fill1 = (255, 255, 255);
+var fill2 = (255, 255, 255);
 var rOt1 = (2); //rotatitons1
 var rOt2 = (5); //rotations2
-var rOt3 = (1);
-var rOt4 = (1);
 
 
 function pasiLeafr(){
@@ -71,7 +66,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
-strokeWeight (sW3);
+strokeWeight (sW2);
 stroke (sC1);
 fill (fill1);
 rotate (rOt1);//don't know why this works but we're running with it
