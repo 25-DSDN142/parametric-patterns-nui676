@@ -36,10 +36,10 @@ var rOt4 = (0);
 //L, R, L, R, L, R, L, R.
 
 //pasi leaf pattern shape, use translate jitsu to call this.
-//figured out leaving out stroke,weight and fill i could imput variables seperatly to each column, wow!
-//got to remember i drew each leaf at different spots, calling them gets funky
-//pasiLeafl is allways going to be called from 0, 0, 1st column
-//pasiLeafr is called from 25, 0. 2nd column
+//pasileaf L and R are made at 0, 0, so translating should be easier.
+//changing columns is annoying,because translating is hoha.
+//need to find a way to change a column without affectting translation jitsu.
+//think we found our if my guy
 
 function pasiLeafl (){
 beginShape();
