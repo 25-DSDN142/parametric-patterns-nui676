@@ -64,7 +64,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
-rotate (2);
+rotate (10);//don't know why this works but we're running with it
 pasiLeafr();
 pop();
 };
