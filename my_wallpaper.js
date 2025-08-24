@@ -1,15 +1,27 @@
 //your parameter variables go here!
 var bGround = (240, 16, 12); //background colour
-var sW1 = (1); //strokeweight 1
-var sW2 = (1);
-var sC1 = (0, 0, 0); //stroke1
-var sC2 = (1);
-var fill1 = (255, 255, 255);
-var fill2 = (255, 255, 255);
-var rOt1 = (0); //rotatitons1
-var rOt2 = (0); //rotations2
+
+var sW1 = (1); //strokeweight
+var sW2 = (1); //""
+var sW3 = (2); //""
+
+var sC1 = (0, 0, 0); //stroke colour
+var sC2 = (1); //""
+var sC3 = (2); //""
+
+var fill1 = (255, 255, 255); //fill colour
+var fill2 = (255, 255, 255); //""
+var fill3 = (255, 255, 255); //""
+
+var rOt1 = (0); //rotatiton
+var rOt2 = (0); //""
+var rOt3 = (0); //""
+
+//test these column sets, L = pasileafl, R = pasiLeafr
 //L, L, R, R, L, L, R, R
 //R, L, R, L, R, L, R, L
+
+
 function pasiLeafr(){
 beginShape();
 vertex (25, 0);
@@ -53,7 +65,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(bGround); //yellow? more mimi than yellow, ew
+  background(bGround); //background colour
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
