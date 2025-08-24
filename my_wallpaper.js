@@ -27,13 +27,13 @@ let rOt4 = (0);
 // (0, 0, 0) white
 // (255, 255, 255) black
 // (247, 11, 7) red
-// () blue
-// () pink
-// () yellow
-// () green
-// () purple
-// () grey
-// () orange
+// (7, 11, 247) blue
+// (247, 7, 215) pink
+// (231, 247, 7) yellow
+// (7, 247, 11) green
+// (155, 7, 247) purple
+// (230, 225, 213) light grey
+// (247, 147, 7) orange
 
 //need a if statment.
 
