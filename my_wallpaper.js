@@ -4,9 +4,21 @@
 
 var lineWidth = 1;
 var rOt1 = 5;
+
 var R = 7; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
 var G = 247; // so if i tutu here then i can change colours?
 var B = 11; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
+var S = 250;
+var Q = 147;
+//list of colours to make it easier
+// (250, 11, 7) red
+// (7, 11, 250) blue
+// (247, 7, 250) light purple
+// (250, 250, 7) yellow
+// (7, 247, 11) greenish
+// (147, 7, 250) purple
+// (247, 147, 7) orange
+
 var lineColour = 155; // black, grey and white work, we only need one value
 //x and y values for translate jitsu
 var C1 = 25;
@@ -104,7 +116,7 @@ for (let a = 0; a <= 7; a++){
 push ();
 translate (C1*a, 0);
 strokeWeight (lineWidth)
-stroke (lineColour);
+stroke (0);
 fill (R, G, B);
 rotate (rOt1);
 pasiLeafl ();
