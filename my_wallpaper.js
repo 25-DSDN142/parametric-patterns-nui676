@@ -82,12 +82,16 @@ function setup_wallpaper(pWallpaper) {
 function wallpaper_background() {
 
   background(247, 147, 6); //background colour
-}
+
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 for (let a = 0; a <= 7; a++){
-
+push ();
+translate (0, 25*a);
+pasiLeafr ();
+push ();
 }
 
+}
 }
