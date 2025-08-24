@@ -73,7 +73,7 @@ pop();
 
 for (let h = 0; h<=7; h++){
 push();
-translate (0, 25*h)
+translate (25, 25*h)
 strokeWeight(1);
 stroke(255, 255, 255);
 fill (0, 0, 0);
