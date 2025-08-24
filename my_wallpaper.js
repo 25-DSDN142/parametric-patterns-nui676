@@ -1,5 +1,12 @@
 //your parameter variables go here!
-// color variables need to be noted, and placed in my symbol not here. 
+// color variables need to be noted here (which line)
+// color variables placed in my symbol not here.
+
+var lineWidth = 1;
+var rOt1 = 5;
+var R = 247 // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
+var G = 147 // so if i tutu here then i can change colours?
+var B = 6 // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
 
 //list of colours to make it easier.
 // (0, 0, 0) white
@@ -14,6 +21,8 @@
 // (247, 147, 6) orange
 
 //need a if statment.
+//if stroke is this colour then fill is this?
+//if background is this colour then rotate is this? don't even know what the helly rotate does, im thinking rotate but something tells me this is not it
 
 //wallpaper ideas
 //L = pasileafl, R = pasiLeafr.
@@ -33,9 +42,8 @@
 //stroke.
 
 //pasi leaf pattern shape, use translate jitsu to call this.
-//pasileaf L and R are made at 0, 0, so translating should be easier.
+//pasileaf L and R are made at 0, 0, so translating should be easier translate jitsu by 25 either way.
 //changing columns is annoying,because translating is hoha.
-//need to find a way to change a column without affectting translation jitsu.
 //think we found our if my guy
 
 function pasiLeafl (){
@@ -82,18 +90,16 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-
-  background(247, 147, 6); //background colour
-
-  
+  background(247, 147, 6); //background colour 
 }
+
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 for (let a = 0; a <= 7; a++){
 push ();
-translate (X*a, Y*a);
-strokeWeight (1)
-stroke (outy);
+translate (0, 25*a);
+strokeWeight (lineWidth)
+stroke (255, 255, 255);
 fill (R, G, B);
 pasiLeafr ();
 pop ();
