@@ -19,7 +19,7 @@ let fil3 = color = (255, 255, 255);
 let fil4 = color =(255, 255, 255);
 //rotatiton variables.
 let rOt1 = (5);//i dont quite know what this does but im going with it
-let rOt2 = (25);
+let rOt2 = (6);
 let rOt3 = (5);
 let rOt4 = (0);
 
@@ -92,7 +92,7 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
-  //column1
+
   for (let a = 0; a <= 7; a++){
   push();
   translate (25*a, 0);
@@ -101,6 +101,76 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
   fill (fil1);
   rotate (rOt1)
   pasiLeafl();
+  pop();}
+
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 25);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();}
+
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 50);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafl();
+  pop();}
+
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 75);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();}
+
+   for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 100);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafl();
+  pop();}
+
+  for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 125);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafr();
+  pop();}
+
+    for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 150);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafl();
+  pop();}
+
+   for (let a = 0; a <= 7; a++){
+  push();
+  translate (25*a, 175);
+  strokeWeight (sW1);
+  stroke (sC1);
+  fill (fil1);
+  rotate (rOt2)
+  pasiLeafr();
   pop();}
 
 }
