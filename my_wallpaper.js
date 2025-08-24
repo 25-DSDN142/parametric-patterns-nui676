@@ -1,21 +1,26 @@
 //your parameter variables go here!
-var bGround = (240, 16, 12); //background colour< that was meant to be red, why not red?
-
-var sW1 = (1); //strokeweight.
-var sW2 = (1); //""
-var sW3 = (2); //""
-
-var sC1 = (0, 0, 0); //stroke colour.
-var sC2 = (1); //""
-var sC3 = (2); //""
-
-var fil1 = (255, 255, 255); //fill colour.
-var fil2 = (255, 255, 255); //""
-var fil3 = (255, 255, 255); //""
-
-var rOt1 = (0); //rotatiton.
-var rOt2 = (0); //""
-var rOt3 = (0); //""
+//background colour
+var bGround = (240, 16, 12);//that was meant to be red, why not red?
+//stroke weight variables.
+var sW1 = (1);
+var sW2 = (1);
+var sW3 = (2);
+var sW4 = (3);
+//stroke colour variables
+var sC1 = (0, 0, 0);
+var sC2 = (1);
+var sC3 = (2); 
+var sC4 = (3);
+//fill colour.
+var fil1 = (255, 255, 255);
+var fil2 = (255, 255, 255);
+var fil3 = (255, 255, 255);
+var fil4 = (255, 255, 255);
+//rotatiton variables.
+var rOt1 = (0);
+var rOt2 = (0);
+var rOt3 = (0);
+var rOt4 = (0);
 
 //list of colours to make it easier.
 //
