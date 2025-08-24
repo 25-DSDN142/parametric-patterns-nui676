@@ -3,7 +3,7 @@
 //background colour
 let bGround = color = (247, 11, 7);//that was meant to be red, why not red?
 //stroke weight variables.//only thing that works
-let sW1 = (1);
+let sW1 = (2);
 let sW2 = (2);
 let sW3 = (2);
 let sW4 = (3);
@@ -27,6 +27,13 @@ let rOt4 = (0);
 // (0, 0, 0) white
 // (255, 255, 255) black
 // (247, 11, 7) red
+// () blue
+// () pink
+// () yellow
+// () green
+// () purple
+// () grey
+// () orange
 
 //need a if statment.
 
@@ -36,6 +43,13 @@ let rOt4 = (0);
 //R, L, R, L, R, L, R, L.
 //R, R, L, L, R, R, L, L.
 //L, R, L, R, L, R, L, R.
+//go horizontal? rows
+//L, R, L, R, L, R, L, R.
+//R, L, R, L, R, L, R, L.
+//individual sets
+//L, R, L, R, L, R, L, R.
+//R, L, R, L, R, L, R, L.
+//
 
 //pasi leaf pattern shape, use translate jitsu to call this.
 //pasileaf L and R are made at 0, 0, so translating should be easier.
