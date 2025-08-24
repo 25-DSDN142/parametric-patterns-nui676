@@ -72,7 +72,8 @@ for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
 strokeWeight (sW3);
-fill ()
+stroke (sC1);
+fill (fill1);
 rotate (rOt1);//don't know why this works but we're running with it
 pasiLeafl()
 pop();
