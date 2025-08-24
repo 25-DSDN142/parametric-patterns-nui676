@@ -1,21 +1,21 @@
 //your parameter variables go here!
 var bGround = ("red"); //background colour
 var sW1 = (1); //strokeweight 1
-var sW2 = ();
-var sW3 = ();
-var sW4 = ();
+var sW2 = (1);
+var sW3 = (1);
+var sW4 = (1);
 var sC1 = (0, 0, 0); //stroke1
-var sC2 = ();
-var sC3 = ();
-var sC4 = ();
+var sC2 = (1);
+var sC3 = (1);
+var sC4 = (1);
 var rOt1 = (2); //rotatitons1
 var rOt2 = (5); //rotations2
-var rOt3 = ();
-var rOt4 = ();
+var rOt3 = (1);
+var rOt4 = (1);
 
 function pasiLeafr(){
-strokeWeight (sWeight);
-stroke (strokeCol)
+strokeWeight (sW1);
+stroke (sC1);
 beginShape();
 vertex (25, 0);
 vertex (50, 25);
@@ -30,8 +30,8 @@ vertex (25, 12.5);
 endShape(CLOSE);}
 
 function pasiLeafl (){
-strokeWeight (sWeight);
-stroke (strokeCol);
+strokeWeight (sW1);
+stroke (sC1);
 beginShape();
 vertex (0, 0);// the brain had to work overtime for this
 vertex (25, 25);
@@ -73,7 +73,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 for (let h = 0; h<=7; h++){
 push();
 translate(-25, 25*h);
-rotate (roT1);//don't know why this works but we're running with it
+rotate (rOt1);//don't know why this works but we're running with it
 pasiLeafr();
 pop();
 };
