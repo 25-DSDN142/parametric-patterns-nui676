@@ -17,7 +17,7 @@ let fil1 = color = (255, 255, 255);//white
 let fil2 = color = (255, 255, 255);
 let fil3 = color = (255, 255, 255);
 let fil4 = color =(255, 255, 255);
-//rotatiton variables.
+//rotatiton variables.//it does something, so we'll take it
 let rOt1 = (5);//i dont quite know what this does but im going with it
 let rOt2 = (6);
 let rOt3 = (5);
