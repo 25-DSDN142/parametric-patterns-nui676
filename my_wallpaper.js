@@ -113,7 +113,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 
 for (let a = 0; a <= 7; a++){
   push ();
-  translate (C1*a, 0);
+  translate (25*a, 25*a);
   strokeWeight (lineWidth)
   stroke (R, G, B);
   fill (R, B, S);
