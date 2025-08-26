@@ -6,14 +6,18 @@ var lineWidth = 1;
 var lineColour = 155; // black, grey and white work, we only need one value
 //x and y values for translate jitsu
 
+//rotation nonsense i do not fully understand but we cool with it.
 var rOt1 = 5;
 var rOt2 = 10;
+
+//yes we've set a variables for colours, all i could think of
 var R = 7; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
 var G = 247; // so if i tutu here then i can change colours?
 var B = 11; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
 var S = 250;//TURNS OUT WE CAN
 var Q = 147;
-//list of colours to make it easier
+
+//list of colours and their var code to make it easier
 // (250, 11, 7) red / (S, B, R)
 // (7, 11, 250) blue / (R, B, S)
 // (247, 7, 250) light purple / (G, R, S)
@@ -22,25 +26,18 @@ var Q = 147;
 // (147, 7, 250) purple / (Q, R, S)
 // (247, 147, 7) orange / (G, Q, R)
 
-
+//tryna figure out columns and rows
 var C1 = 25;
 var C2 = 50;
 var C3 = 75;
 var C4 = 100;
 var C5 = 125;
 var C6 = 150;
-//list of colours to make it easier
-// (247, 11, 7) red
-// (7, 11, 247) blue
-// (247, 7, 215) pink
-// (231, 247, 7) yellow
-// (7, 247, 11) green
-// (155, 7, 247) purple
-// (247, 147, 6) orange
 
 //need a if statement.
 //if stroke is this colour then fill is this?
 //if background is this colour then rotate is this? don't even know what the helly rotate does, im thinking rotate but something tells me this is not it
+//if broke stay broke.lol
 
 //wallpaper ideas
 //L = pasileafl, R = pasiLeafr.
@@ -108,7 +105,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R, B, S); //background colour 
+  background(S); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
@@ -130,10 +127,43 @@ for (let b = 0; b <= 7; b++){
   translate (C1*b, C1);
   strokeWeight (lineWidth);
   stroke (S);
+  fill (R, B, S)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 25);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, S, Q)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (50*b, 0);
+  strokeWeight (lineWidth);
+  stroke (S);
   fill (R, G, B)
   rotate (rOt2);
   pasiLeafr();
   pop();
+}
+
+for (let c = 0; c <= 4; c++){
+  push ();
+  translate (0, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
 }
 
 }
