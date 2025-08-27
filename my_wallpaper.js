@@ -105,33 +105,14 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R, S, B); //background colour 
+  background(0); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 
-for (let a = 0; a <= 7; a++){
-  push ();
-  translate (25*a, 25*a);
-  strokeWeight (lineWidth)
-  stroke (R, G, B);
-  fill (R, B, S);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
 
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (C1*b, C1);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (R, B, S)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
+
 
 for (let b = 0; b <= 7; b++){
   push ();
@@ -146,18 +127,161 @@ for (let b = 0; b <= 7; b++){
 
 for (let b = 0; b <= 7; b++){
   push ();
-  translate (50*b, 0);
+  translate (25*b, 75);
   strokeWeight (lineWidth);
   stroke (S);
-  fill (R, G, B)
+  fill (B, S, Q)
   rotate (rOt2);
   pasiLeafr();
   pop();
 }
 
-for (let c = 0; c <= 4; c++){
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 175);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, Q, S)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 150);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, S, Q)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 125);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, S, Q)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 100);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, S, Q)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 50);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, Q, S)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let b = 0; b <= 7; b++){
+  push ();
+  translate (25*b, 0);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (B, S, Q)
+  rotate (rOt2);
+  pasiLeafr();
+  pop();
+}
+
+for (let c = 0; c <= 7; c++){
   push ();
   translate (0, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (25, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (50, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (75, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (100, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (125, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (150, 25*c);
+  strokeWeight (lineWidth);
+  stroke (S);
+  fill (S, B, R);
+  rotate (rOt1);
+  pasiLeafl ();
+  pop ();
+}
+
+for (let c = 0; c <= 7; c++){
+  push ();
+  translate (175, 25*c);
   strokeWeight (lineWidth);
   stroke (S);
   fill (S, B, R);
