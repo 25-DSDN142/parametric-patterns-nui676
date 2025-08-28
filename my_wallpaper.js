@@ -104,6 +104,7 @@ function wallpaper_background() {
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
   let bGround = color (B, R, G)
+  let leaf1 = pasiLeaf ();
   
 
 //can we translate multiple shapes in the same jitsu?
@@ -114,7 +115,7 @@ for (let a = 0; a <= 7; a ++){
   stroke (lineColour);
   fill (bGround);
   translate (0, 25*a);
-  pasiLeafr();
+  Leaf1();
   translate (25, 25/height*a);//woohoo!
   fill (S, Q, B);
   pasiLeafl();;
