@@ -253,3 +253,23 @@ function setup_wallpaper(pWallpaper) {
   rotate (rOt2)
   pasiLeafr();
   pop();}
+
+wallpaper tilt, fix this up later
+  //your parameter variables go here!
+// color variables need to be noted here (which line)
+// color variables placed in my symbol not here.
+
+var lineWidth = 1;
+var lineColour = 155; // black, grey and white work, we only need one value
+//x and y values for translate jitsu
+
+//rotation nonsense i do not fully understand but we cool with it.
+var rOt1 = 5;
+var rOt2 = 10;
+
+//yes we've set a variables for colours, all i could think of
+var R = 7; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
+var G = 247; // so if i tutu here then i can change colours?
+var B = 11; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
+var S = 250;//TURNS OUT WE CAN
+var Q = 147;
