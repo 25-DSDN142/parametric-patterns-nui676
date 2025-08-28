@@ -105,6 +105,7 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 
   let bGround = color (B, R, G)
   let leaf1 = pasiLeafl ();
+  let leaf2 = pasiLeafr ();
   
 
 //can we translate multiple shapes in the same jitsu?
@@ -118,7 +119,7 @@ for (let a = 0; a <= 7; a ++){
   Leaf1();
   translate (25, 25/height*a);//woohoo!
   fill (S, Q, B);
-  pasiLeafl();;
+  leaf2();
   translate (25, 25/height*a);
   pasiLeafr ();
   translate (25, 25/height*a);
