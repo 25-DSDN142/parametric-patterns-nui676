@@ -3,12 +3,12 @@
 // color variables placed in my symbol not here.
 
 var lineWidth = 1;
-var lineColour = 155; // black, grey and white work, we only need one value
-//x and y values for translate jitsu
+var lineColour = 0;
 
 //rotation nonsense i do not fully understand but we cool with it.
 var rOt1 = 5;
 var rOt2 = 10;
+var rOt3 = 0;
 
 //yes we've set a variables for colours, all i could think of
 var R = 7; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
@@ -26,13 +26,6 @@ var Q = 147;
 // (147, 7, 250) purple / (Q, R, S)
 // (247, 147, 7) orange / (G, Q, R)
 
-//tryna figure out columns and rows
-var C1 = 25;
-var C2 = 50;
-var C3 = 75;
-var C4 = 100;
-var C5 = 125;
-var C6 = 150;
 
 //need a if statement.
 //if stroke is this colour then fill is this?
@@ -105,189 +98,41 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(0); //background colour 
+  background(B, G, R); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
+  let bGround = color (B, R, G)
+  
 
+//can we translate multiple shapes in the same jitsu?
 
-
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 25);
+for (let a = 0; a <= 7; a ++){
+  push();
   strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
+  stroke (lineColour);
+  fill (bGround);
+  translate (0, 25*a);
   pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 75);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
+  translate (25, 25/height*a);//woohoo!
+  fill (S, Q, B);
+  pasiLeafl();;
+  translate (25, 25/height*a);
+  pasiLeafr ();
+  translate (25, 25/height*a);
+  pasiLeafl();
+  translate (25, 25/height*a);
   pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 175);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, Q, S)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 150);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 125);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 100);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 50);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, Q, S)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-  push ();
-  translate (25*b, 0);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (B, S, Q)
-  rotate (rOt2);
-  pasiLeafr();
-  pop();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (0, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
+  translate (25, 25/height*a);
+  pasiLeafl ();
+  translate (25, 25/height*a);
+  pasiLeafr ();
+  translate (25, 25/height*a);
   pasiLeafl ();
   pop ();
 }
+ //yes you can!
 
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (25, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (50, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (75, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (100, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (125, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (150, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
-
-for (let c = 0; c <= 7; c++){
-  push ();
-  translate (175, 25*c);
-  strokeWeight (lineWidth);
-  stroke (S);
-  fill (S, B, R);
-  rotate (rOt1);
-  pasiLeafl ();
-  pop ();
-}
 
 }
