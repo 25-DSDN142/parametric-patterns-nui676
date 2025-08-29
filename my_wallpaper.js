@@ -2,23 +2,26 @@
 // color variables need to be noted here (which line)
 // color variables placed in my symbol not here.
 
-var lineWidth = 1;
-var lineColour = 0;
-var yColumn = 50;
+var Weight1 = 1;
+var lineColour = 255;
+var lineColour1 = 155;
+var yColumn = 0;
 
-//rotation nonsense i do not fully understand but we cool with it.
-var rOt1 = 0;
-var rOt2 = 0;
-var rOt3 = 0;
+//columns
+var c1 = 0;
+var c2 = 50;
+var c3 = 75;
+var c4 = 100;
+var c5 = 125;
+var c6 = 150;
+var c7 = 175;
 
-//yes we've set a variables for colours, all i could think of
-var R = 7; // maybe we can change colour here? p5 only recognises one number hence why colours need to be called in mySymbol, don't know why 
-var G = 247; // so if i tutu here then i can change colours?
-var B = 11; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
-var S = 250;//TURNS OUT WE CAN
+// COLOURS
+var R = 7;
+var G = 247;
+var B = 11;
+var S = 250;
 var Q = 147;
-
-
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) red / (S, B, R)
@@ -34,28 +37,6 @@ var Q = 147;
 //if stroke is this colour then fill is this?
 //if background is this colour then rotate is this? don't even know what the helly rotate does, im thinking rotate but something tells me this is not it
 //if broke stay broke.lol
-
-//wallpaper ideas
-//L = pasileafl, R = pasiLeafr.
-//L, L, R, R, L, L, R, R.
-//R, L, R, L, R, L, R, L.
-//R, R, L, L, R, R, L, L.
-//L, R, L, R, L, R, L, R.
-//go horizontal/ rows
-//L, R, L, R, L, R, L, R.
-//R, L, R, L, R, L, R, L.
-//individual sets
-//L, R, L, R, L, R, L, R.//change every row/column.
-//R, L, R, L, R, L, R, L.
-//change colors?
-//bGround.
-//fills.
-//stroke.
-
-//pasi leaf pattern shape, use translate jitsu to call this.
-//pasileaf L and R are made at 0, 0, so translating should be easier translate jitsu by 25 either way.
-//changing columns is annoying,because translating is hoha.
-//think we found our if my guy
 
 function pasiLeafl (){
 beginShape();
@@ -101,56 +82,104 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(S); //background colour 
+  background(R); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
   
 //can we translate multiple shapes in the same jitsu?
-
+//no you can't, weird thing start happening
 let leafFill1 = color (B, S, R)
 let leafFill2 = color (S, R, B)
+
 
 for (let a = 0; a <= 7; a ++){
 
   push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
   fill (leafFill1);
-  translate (0, 25/height*a);
+  translate (c1, 25*a);
   pasiLeafl();
   pop();
+}
 
-  push()
-  fill (leafFill2)
-  translate( 25, 25/height*a);
+for (let b = 0; b <= 7; b++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
+  fill (leafFill2);
+  translate( 25, 25*b);
   pasiLeafr ();
   pop();
-  
-  fill(leafFill1)
-  translate (25, 25/height*a);
-  pasiLeafl ();
+}
 
-  fill(leafFill2);
-  translate (25, 25/height*a);
-  pasiLeafr ();
+for (let c = 0; c <= 7; c++){
 
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
   fill (leafFill1);
-  translate (25, 25/height*a);
+  translate( c2, 25*c);
   pasiLeafl ();
+  pop();
+}
 
+for (let d = 0; d <= 7; d++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
   fill (leafFill2);
-  translate (25, 25/height*a);
-  pasiLeafr ();
-
-  fill (leafFill1);
-  translate (25, 25/height*a);
-  pasiLeafl ();
-
-  fill (leafFill2);
-  translate (25, 25/height*a);
+  translate( c3, 25*d);
   pasiLeafr ();
   pop();
+}
+
+for (let e = 0; e <= 7; e++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
+  fill (leafFill1);
+  translate( c4,25*e);
+  pasiLeafl ();
+  pop();
+}
+
+for (let f = 0; f <= 7; f++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
+  fill (leafFill2);
+  translate( c5, 25*f);
+  pasiLeafr ();
+  pop();
+}
+
+for (let g = 0; g <= 7; g++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
+  fill (leafFill1);
+  translate( c6, 25*g);
+  pasiLeafr ();
+  pop();
+}
+
+for (let h = 0; h <= 7; h++){
+
+  push();
+  strokeWeight (Weight1);
+  stroke (lineColour);
+  fill (leafFill2);
+  translate( c7, 25*h);
+  pasiLeafr ();
+  pop();
+}
 
 }
-  
 
-}
