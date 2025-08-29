@@ -4,10 +4,11 @@
 
 var lineWidth = 1;
 var lineColour = 0;
+var yColumn = 50;
 
 //rotation nonsense i do not fully understand but we cool with it.
-var rOt1 = 5;
-var rOt2 = 10;
+var rOt1 = 0;
+var rOt2 = 0;
 var rOt3 = 0;
 
 //yes we've set a variables for colours, all i could think of
@@ -16,6 +17,8 @@ var G = 247; // so if i tutu here then i can change colours?
 var B = 11; // have to figure out how to change each pasiLeaf L or R seperately? that would be annoying no? if i just added var letter and a number? x 3 x however many colors i wana do
 var S = 250;//TURNS OUT WE CAN
 var Q = 147;
+
+
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) red / (S, B, R)
@@ -98,26 +101,56 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(B, G, R); //background colour 
+  background(S); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
-
-  let bGround = color (B, R, G)
   
-
 //can we translate multiple shapes in the same jitsu?
 
+let leafFill1 = color (B, S, R)
+let leafFill2 = color (S, R, B)
+
 for (let a = 0; a <= 7; a ++){
+
   push();
-  strokeWeight (lineWidth);
-  stroke (lineColour);
-  fill (R, G, B);
+  fill (leafFill1);
   translate (0, 25/height*a);
   pasiLeafl();
-  pop();}
-  
- //yes you can!
+  pop();
 
+  push()
+  fill (leafFill2)
+  translate( 25, 25/height*a);
+  pasiLeafr ();
+  pop();
+  
+  fill(leafFill1)
+  translate (25, 25/height*a);
+  pasiLeafl ();
+
+  fill(leafFill2);
+  translate (25, 25/height*a);
+  pasiLeafr ();
+
+  fill (leafFill1);
+  translate (25, 25/height*a);
+  pasiLeafl ();
+
+  fill (leafFill2);
+  translate (25, 25/height*a);
+  pasiLeafr ();
+
+  fill (leafFill1);
+  translate (25, 25/height*a);
+  pasiLeafl ();
+
+  fill (leafFill2);
+  translate (25, 25/height*a);
+  pasiLeafr ();
+  pop();
+
+}
+  
 
 }
