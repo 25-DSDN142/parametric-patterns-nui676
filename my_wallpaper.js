@@ -2,16 +2,14 @@
 // color variables need to be noted here (which line)
 // color variables placed in my symbol not here.
 
-var Weight1 = 1;
-var lineColour = 255;
-var lineColour1 = 155;
 
 //let leafFill1 = color (B, S, R);
 //let leafFill2 = color (S, R, B);
-// if bGround is black make leafFill1 = (R, S, B)?
-//if statement ideas.
-//variables we will keep simple, colours change, strokeWeight and stroke.
-
+//let pAttern1 = pasiLeafl
+//let pAttern2 = pasiLeafr
+var Weight1 = 1;
+var lineColour = 255;
+var lineColour1 = 155;
 
 //columns
 var c1 = 0;
@@ -92,6 +90,8 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 //no you can't, weird thing start happening
 let leafFill1 = color (B, S, R)
 let leafFill2 = color (S, R, B)
+let pAttern1 = (pasiLeafl)
+let pAttern2 = (pasiLeafr)
 
 
 for (let a = 0; a <= 7; a ++){
@@ -101,7 +101,7 @@ for (let a = 0; a <= 7; a ++){
   stroke (lineColour);
   fill (leafFill1);
   translate (c1, 25*a);
-  pasiLeafl();
+  pAttern1();
   pop();
 }
 
@@ -112,7 +112,7 @@ for (let b = 0; b <= 7; b++){
   stroke (lineColour);
   fill (leafFill2);
   translate( 25, 25*b);
-  pasiLeafr ();
+  pAttern2();
   pop();
 }
 
