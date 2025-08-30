@@ -5,7 +5,13 @@
 var Weight1 = 1;
 var lineColour = 255;
 var lineColour1 = 155;
-var yColumn = 0;
+
+//let leafFill1 = color (B, S, R);
+//let leafFill2 = color (S, R, B);
+// if bGround is black make leafFill1 = (R, S, B)?
+//if statement ideas.
+//variables we will keep simple, colours change, strokeWeight and stroke.
+
 
 //columns
 var c1 = 0;
@@ -24,21 +30,16 @@ var S = 250;
 var Q = 147;
 
 //list of colours and their var code to make it easier
-// (250, 11, 7) red / (S, B, R)
-// (7, 11, 250) blue / (R, B, S)
-// (247, 7, 250) light purple / (G, R, S)
-// (250, 250, 7) yellow / (S, S, R)
-// (7, 247, 11) greenish / (R, G, B)
-// (147, 7, 250) purple / (Q, R, S)
-// (247, 147, 7) orange / (G, Q, R)
+// (250, 11, 7) / (S, B, R) / RED
+// (7, 11, 250) / (R, B, S) / BLUE
+// (247, 7, 250) / (G, R, S) / PURPLE LITE
+// (250, 250, 7) / (S, S, R) / YELLOW
+// (7, 247, 11) / (R, G, B) / GREENISH
+// (147, 7, 250) / (Q, R, S) / PURPLE
+// (247, 147, 7) / (G, Q, R) / ORANGE
 
 
-//need a if statement.
-//if stroke is this colour then fill is this?
-//if background is this colour then rotate is this? don't even know what the helly rotate does, im thinking rotate but something tells me this is not it
-//if broke stay broke.lol
-
-function pasiLeafl (){
+function pasiLeafl(){
 beginShape();
 vertex (0, 0);
 vertex (25, 25);
@@ -166,7 +167,7 @@ for (let g = 0; g <= 7; g++){
   stroke (lineColour);
   fill (leafFill1);
   translate( c6, 25*g);
-  pasiLeafr ();
+  pasiLeafl ();
   pop();
 }
 
