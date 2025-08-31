@@ -1,16 +1,30 @@
-//background(R, S, G); //background colour
-//let St = color (R, S, B) stroke colours
-//let Fill1 = color (S, B, R); fill colouras 
-//let Fill2 = color (Q, R, S); fill colours
-//let pAttern1 = (pasiLeafr);
-//let pAttern2 = (upTangles);
+//originl settings below.
+////translate variables
+//var T = 25 // y variable in translate
+//var GG = 7 // how many copys are translated
+//var imgScale = 1
+
+//mistake we like
+//scale (imgScale)
+//let Fill1 = color (R, B, R);
+//let Fill2 = color (B, R, B);
+//let pAttern1 = (pasiLeafl);
+//let pAttern2 = (pasiLeafr);
+//let St = color (S, Q, G)
+////translate variables
+//var T = 20 // y variable in translate
+//var GG = 20 // how many copys are translated
+//var imgScale = 2
+//strokeWeight variables
+//var Weight1 = 1;
 
 //translate variables
-var T = 20 // y variable in translate
-var GG = 20 // how many copys are translated
-var imgScale = 2
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 1
+
 //strokeWeight variables
-var Weight1 = 1;
+var Weight1 = 0.5;
 
 //columns
 //x variable in translate
@@ -62,14 +76,6 @@ vertex (0, 12.5);
 endShape(CLOSE);
 }
 
-function tAngles (){
-triangle (0, 0, 25, 0, 12.5, 12.5 )
-}
-
-function upTangles (){
-  triangle (0, 12.5, 25, 12.5, 12.5, 0)
-}
-
 function setup_wallpaper(pWallpaper) {
  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GRID_WALLPAPER);
@@ -84,20 +90,26 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R, S, B); //background colour 
+  background(B, S, R); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 scale (imgScale)
-let Fill1 = color (R, B, R);
+let Fill1 = color (R, Q, S);
 let Fill2 = color (B, R, B);
-let pAttern1 = (pasiLeafl);
-let pAttern2 = (pasiLeafr);
-let St = color (S, Q, G)
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafl);
+let St = color (S)
 
+push();
 if (background = B, S, R){
-  pAttern2 == pAttern1
+  let pAttern1 = pAttern2
+};
+pop();
+
+if (background = S){
+  let pAttern2 = pAttern1
 }
 
 //list of colours and their var code to make it easier
