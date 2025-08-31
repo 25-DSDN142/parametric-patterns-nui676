@@ -24,7 +24,7 @@ var GG = 7 // how many copys are translated
 var imgScale = 1
 
 //strokeWeight variables
-var Weight1 = 0.5;
+var Weight1 = 1;
 
 //columns
 //x variable in translate
@@ -90,7 +90,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(B, S, R); //background colour 
+  background(S); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
@@ -100,17 +100,8 @@ let Fill1 = color (R, Q, S);
 let Fill2 = color (B, R, B);
 let pAttern1 = (pasiLeafr);
 let pAttern2 = (pasiLeafl);
-let St = color (S)
+let St = color (B, R, G)
 
-push();
-if (background = B, S, R){
-  let pAttern1 = pAttern2
-};
-pop();
-
-if (background = S){
-  let pAttern2 = pAttern1
-}
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) / (S, B, R) / RED
@@ -126,7 +117,7 @@ for (let a = 0; a <= GG; a++){
   push ();
   strokeWeight (Weight1);
   stroke (St);
-  fill (Fill2)
+  fill (Fill1)
   translate (c1, T *a);
   pAttern1();
   pop ();
@@ -148,7 +139,7 @@ for (let a = 0; a <= GG; a++){
   push ();
   strokeWeight (Weight1);
   stroke (St);
-  fill (Fill2);
+  fill (Fill1);
   translate (c3, T *a);
   pAttern1 ();
   pop ();
@@ -170,7 +161,7 @@ for (let a = 0; a <= GG; a++){
   push ();
   strokeWeight (Weight1);
   stroke (St);
-  fill (Fill2);
+  fill (Fill1);
   translate (c5, T *a);
   pAttern1 ();
   pop ();
@@ -193,7 +184,7 @@ for (let a = 0; a <= GG; a++){
   push ();
   strokeWeight (Weight1);
   stroke (St);
-  fill (Fill2);
+  fill (Fill1);
   translate (c7, T *a);
   pAttern1 ();
   pop ();
