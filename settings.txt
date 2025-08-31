@@ -83,3 +83,20 @@ let Fill2 = color ( G, R, S);
 let pAttern1 = (pasiLeafl);
 let pAttern2 = (pasiLeafr);
 let St = color (G, Q, R)
+
+wallpaper6:
+//translate variables
+var T = 15 // y variable in translate
+var GG = 15 // how many copys are translated
+var imgScale = 1
+
+//strokeWeight variables
+var Weight1 = 2;
+
+background(Q, R, S)
+scale (imgScale)
+let Fill1 = color (S, B, R);
+let Fill2 = color ( 0);
+let pAttern1 = (pasiLeafl);
+let pAttern2 = (pasiLeafl);
+let St = color (255)
