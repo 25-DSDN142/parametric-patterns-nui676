@@ -12,7 +12,7 @@
 //let pAttern2 = (pasiLeafl);
 //let St = color (S, S, R)
 
-
+//need an if statement
 
 //translate variables
 var T = 25 // y variable in translate
