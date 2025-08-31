@@ -15,12 +15,12 @@
 
 
 //translate variables
-var T = 20 // y variable in translate
+var T = 25 // y variable in translate
 var GG = 7 // how many copys are translated
-var imgScale = 2
+var imgScale = 3
 
 //strokeWeight variables
-var Weight1 = 1;
+var Weight1 = 0.5;
 
 //columns
 //x variable in translate
@@ -86,17 +86,17 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(0); //background colour 
+  background(155); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 scale (imgScale)
-let Fill1 = color (0);
-let Fill2 = color ( 0);
-let pAttern1 = (pasiLeafl);
-let pAttern2 = (pasiLeafr);
-let St = color (255);
+let Fill1 = color (255);
+let Fill2 = color (255);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafl);
+let St = color (0);
 
 
 //list of colours and their var code to make it easier
