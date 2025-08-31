@@ -85,7 +85,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R, G, B); //background colour 
+  background(0); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
