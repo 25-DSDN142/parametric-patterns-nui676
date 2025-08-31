@@ -1,14 +1,53 @@
 
-Wallpaper 1:
+wallpaper1:
+//translate variables
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 1
 
-//these lets can be found lines 92-95
-//let leafFill1 = color (G, R, S)
-//let leafFill2 = color (B, R, S)
-//let pAttern1 = (pasiLeafr)
-//let pAttern2 = (pasiLeafl)
+//strokeWeight variables
+var Weight1 = 1;
 
-var Weight1 = 2;
-var lineColour = 0;
-var lineColour1 = 155;
+background(S)
+scale (imgScale)
+let Fill1 = color (R, Q, S);
+let Fill2 = color (B, R, B);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafl);
+let St = color (B, R, G)
 
 wallpaper2:
+
+//translate variables
+var T = 20 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 2
+
+//strokeWeight variables
+var Weight1 = 1;
+
+background(S, B, R)
+scale (imgScale)
+let Fill1 = color (0);
+let Fill2 = color (0);
+let pAttern1 = (pasiLeafl);
+let pAttern2 = (pasiLeafl);
+let St = color (S, S, R)
+
+
+wallpaper3:
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 4
+
+//strokeWeight variables
+var Weight1 = 1;
+
+background(G, R, S);
+scale (imgScale)
+let Fill1 = color (0);
+let Fill2 = color (0);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafr);
+let St = color (G, Q, R)
+
