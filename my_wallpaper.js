@@ -1,24 +1,29 @@
-//your parameter variables go here!
-// color variables need to be noted here (which line)
-// color variables placed in my symbol not here.
+//background(R, S, G); //background colour
+//let St = color (R, S, B) stroke colours
+//let Fill1 = color (S, B, R); fill colouras 
+//let Fill2 = color (Q, R, S); fill colours
+//let pAttern1 = (pasiLeafr);
+//let pAttern2 = (upTangles);
 
+//translate variables
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
 
-//let leafFill1 = color (B, S, R);
-//let leafFill2 = color (S, R, B);
-//let pAttern1 = pasiLeafl
-//let pAttern2 = pasiLeafr
+//strokeWeight variables
 var Weight1 = 1;
-var lineColour = 255;
-var lineColour1 = 155;
+var Weight2 = 1;
+var Weight3 = 2;
 
 //columns
+//x variable in translate
 var c1 = 0;
-var c2 = 50;
-var c3 = 75;
-var c4 = 100;
-var c5 = 125;
-var c6 = 150;
-var c7 = 175;
+var c2 = 25;
+var c3 = 50
+var c4 = 75;
+var c5 = 100;
+var c6 = 125;
+var c7 = 150;
+var c8 = 175;
 
 // COLOURS
 var R = 7;
@@ -26,16 +31,6 @@ var G = 247;
 var B = 11;
 var S = 250;
 var Q = 147;
-
-//list of colours and their var code to make it easier
-// (250, 11, 7) / (S, B, R) / RED
-// (7, 11, 250) / (R, B, S) / BLUE
-// (247, 7, 250) / (G, R, S) / PURPLE LITE
-// (250, 250, 7) / (S, S, R) / YELLOW
-// (7, 247, 11) / (R, G, B) / GREENISH
-// (147, 7, 250) / (Q, R, S) / PURPLE
-// (247, 147, 7) / (G, Q, R) / ORANGE
-
 
 function pasiLeafl(){
 beginShape();
@@ -67,12 +62,20 @@ vertex (0, 12.5);
 endShape(CLOSE);
 }
 
+function tAngles (){
+triangle (0, 0, 25, 0, 12.5, 12.5 )
+}
+
+function upTangles (){
+  triangle (0, 12.5, 25, 12.5, 12.5, 0)
+}
+
 function setup_wallpaper(pWallpaper) {
- pWallpaper.output_mode(DEVELOP_GLYPH);
+ pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -81,106 +84,118 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(R); //background colour 
+  background(S); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
-  
-//can we translate multiple shapes in the same jitsu?
-//no you can't, weird thing start happening
-let leafFill1 = color (B, S, R)
-let leafFill2 = color (S, R, B)
-let pAttern1 = (pasiLeafl)
-let pAttern2 = (pasiLeafr)
+
+let Fill1 = color (S, B, R);
+let Fill2 = color (Q, R, S);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafl);
+let St = color (R, S, B)
+
+//list of colours and their var code to make it easier
+// (250, 11, 7) / (S, B, R) / RED
+// (7, 11, 250) / (R, B, S) / BLUE
+// (247, 7, 250) / (G, R, S) / PURPLE LITE
+// (250, 250, 7) / (S, S, R) / YELLOW
+// (7, 247, 11) / (R, G, B) / GREENISH
+// (147, 7, 250) / (Q, R, S) / PURPLE
+// (247, 147, 7) / (G, Q, R) / ORANGE
 
 
-for (let a = 0; a <= 7; a ++){
-
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill1);
-  translate (c1, 25*a);
-  pAttern1();
-  pop();
-}
-
-for (let b = 0; b <= 7; b++){
-
-  push();
-  strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill2);
-  translate( 25, 25*b);
+  stroke (St);
+  fill (Fill2)
+  translate (c1, T *a);
   pAttern2();
-  pop();
+  pop ();
 }
 
-for (let c = 0; c <= 7; c++){
 
+for (let b = 0; b <= GG; b++){
   push();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill1);
-  translate( c2, 25*c);
-  pasiLeafl ();
-  pop();
+  stroke (St)
+  fill (Fill2);
+  translate (c2, T *b);
+  pAttern2 ();
+  pop ();
 }
 
-for (let d = 0; d <= 7; d++){
 
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill2);
-  translate( c3, 25*d);
-  pasiLeafr ();
-  pop();
+  stroke (St);
+  fill (Fill2);
+  translate (c3, T *a);
+  pAttern2 ();
+  pop ();
+
 }
 
-for (let e = 0; e <= 7; e++){
-
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill1);
-  translate( c4,25*e);
-  pasiLeafl ();
-  pop();
+  stroke (St);
+  fill (Fill2);
+  translate (c4, T *a);
+  pAttern2 ();
+  pop ();
+
 }
 
-for (let f = 0; f <= 7; f++){
-
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill2);
-  translate( c5, 25*f);
-  pasiLeafr ();
-  pop();
+  stroke (St);
+  fill (Fill2);
+  translate (c5, T *a);
+  pAttern2 ();
+  pop ();
+
 }
 
-for (let g = 0; g <= 7; g++){
-
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill1);
-  translate( c6, 25*g);
-  pasiLeafl ();
-  pop();
+  stroke (St);
+  fill (Fill2);
+  translate (c6, T *a);
+  pAttern2 ();
+  pop ();
+
 }
 
-for (let h = 0; h <= 7; h++){
 
-  push();
+for (let a = 0; a <= GG; a++){
+  push ();
   strokeWeight (Weight1);
-  stroke (lineColour);
-  fill (leafFill2);
-  translate( c7, 25*h);
-  pasiLeafr ();
-  pop();
-}
+  stroke (St);
+  fill (Fill2);
+  translate (c7, T *a);
+  pAttern2 ();
+  pop ();
 
 }
 
+
+for (let a = 0; a <= GG; a++){
+  push ();
+  strokeWeight (Weight1);
+  stroke (St);
+  fill (Fill2);
+  translate (c8, T *a);
+  pAttern2 ();
+  pop ();
+
+}
+
+
+
+
+}
