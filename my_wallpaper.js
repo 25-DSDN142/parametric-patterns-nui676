@@ -7,12 +7,10 @@
 
 //translate variables
 var T = 25 // y variable in translate
-var GG = 7 // how many copys are translated
+var GG = 8 // how many copys are translated
 
 //strokeWeight variables
 var Weight1 = 1;
-var Weight2 = 1;
-var Weight3 = 2;
 
 //columns
 //x variable in translate
@@ -26,11 +24,13 @@ var c7 = 150;
 var c8 = 175;
 
 // COLOURS
-var R = 7;
+var R = 5;
 var G = 247;
 var B = 11;
 var S = 250;
 var Q = 147;
+
+//can i do something with the columns? if bGround is a certain colour change all pAttern2 in any odd column to pAttern1?
 
 function pasiLeafl(){
 beginShape();
@@ -84,16 +84,18 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(S); //background colour 
+  background(R, S, B); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
-let Fill1 = color (S, B, R);
-let Fill2 = color (Q, R, S);
-let pAttern1 = (pasiLeafr);
-let pAttern2 = (pasiLeafl);
-let St = color (R, S, B)
+let Fill1 = color (R, B, R);
+let Fill2 = color (B, R, B);
+let pAttern1 = (pasiLeafl);
+let pAttern2 = (pasiLeafr);
+let St = color (S, Q, G)
+
+
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) / (S, B, R) / RED
@@ -111,7 +113,7 @@ for (let a = 0; a <= GG; a++){
   stroke (St);
   fill (Fill2)
   translate (c1, T *a);
-  pAttern2();
+  pAttern1();
   pop ();
 }
 
@@ -133,7 +135,7 @@ for (let a = 0; a <= GG; a++){
   stroke (St);
   fill (Fill2);
   translate (c3, T *a);
-  pAttern2 ();
+  pAttern1 ();
   pop ();
 
 }
@@ -155,7 +157,7 @@ for (let a = 0; a <= GG; a++){
   stroke (St);
   fill (Fill2);
   translate (c5, T *a);
-  pAttern2 ();
+  pAttern1 ();
   pop ();
 
 }
@@ -178,7 +180,7 @@ for (let a = 0; a <= GG; a++){
   stroke (St);
   fill (Fill2);
   translate (c7, T *a);
-  pAttern2 ();
+  pAttern1 ();
   pop ();
 
 }
