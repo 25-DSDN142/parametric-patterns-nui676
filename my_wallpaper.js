@@ -97,7 +97,7 @@ let pAttern2 = (pasiLeafr);
 let St = color (S, Q, G)
 
 if (background = B, S, R){
-  pAttern2 = pAttern1
+  pAttern2 == pAttern1
 }
 
 //list of colours and their var code to make it easier
