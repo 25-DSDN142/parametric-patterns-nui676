@@ -4,23 +4,25 @@
 //var GG = 7 // how many copys are translated
 //var imgScale = 1
 
-//lets can be found lines 94 - 99
+//lets can be found lines 97 - 107
 //scale (imgScale)
-//let Fill1 = color (0);
-//let Fill2 = color (0);
-//let pAttern1 = (pasiLeafl);
+//let Fill1 = color (S, S, R);
+//let Fill2 = color (S, B, R);
+//let pAttern1 = (pasiLeafr);
 //let pAttern2 = (pasiLeafl);
-//let St = color (S, S, R)
+//let St = color (G, Q, R);
+//let sWitch = "YES" ;
 
-//need an if statement
+//if (sWitch == "YES"){ pAttern1 = pAttern2}
 
 //translate variables
 var T = 25 // y variable in translate
 var GG = 7 // how many copys are translated
-var imgScale = 3
+var imgScale = 1
 
 //strokeWeight variables
-var Weight1 = 0.5;
+var Weight1 = 1;
+var Weight2 = 2;
 
 //columns
 //x variable in translate
@@ -40,10 +42,7 @@ var B = 11;
 var S = 250;
 var Q = 147;
 
-//can i do something with the columns? if bGround is a certain colour change all pAttern2 in any odd column to pAttern1?
-
 function pasiLeafl(){
-beginShape();
 vertex (0, 0);
 vertex (25, 25);
 vertex (12.5, 25);
@@ -86,18 +85,22 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(155); //background colour 
+  background(R, G, B); //background colour 
 }
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 scale (imgScale)
-let Fill1 = color (255);
-let Fill2 = color (255);
+let Fill1 = color (S, S, R);
+let Fill2 = color (S, B, R);
 let pAttern1 = (pasiLeafr);
 let pAttern2 = (pasiLeafl);
-let St = color (0);
+let St = color (G, Q, R);
+let sWitch = "YES" ;
 
+if (sWitch == "YES"){
+  pAttern1 = pAttern2
+}
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) / (S, B, R) / RED
@@ -122,7 +125,7 @@ for (let a = 0; a <= GG; a++){
 
 for (let b = 0; b <= GG; b++){
   push();
-  strokeWeight (Weight1);
+  strokeWeight (Weight2);
   stroke (St)
   fill (Fill2);
   translate (c2, T *b);
@@ -144,7 +147,7 @@ for (let a = 0; a <= GG; a++){
 
 for (let a = 0; a <= GG; a++){
   push ();
-  strokeWeight (Weight1);
+  strokeWeight (Weight2);
   stroke (St);
   fill (Fill2);
   translate (c4, T *a);
@@ -166,7 +169,7 @@ for (let a = 0; a <= GG; a++){
 
 for (let a = 0; a <= GG; a++){
   push ();
-  strokeWeight (Weight1);
+  strokeWeight (Weight2);
   stroke (St);
   fill (Fill2);
   translate (c6, T *a);
@@ -190,7 +193,7 @@ for (let a = 0; a <= GG; a++){
 
 for (let a = 0; a <= GG; a++){
   push ();
-  strokeWeight (Weight1);
+  strokeWeight (Weight2);
   stroke (St);
   fill (Fill2);
   translate (c8, T *a);
