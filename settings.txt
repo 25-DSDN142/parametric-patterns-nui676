@@ -51,3 +51,35 @@ let pAttern1 = (pasiLeafr);
 let pAttern2 = (pasiLeafr);
 let St = color (G, Q, R)
 
+wallpaper4:
+//translate variables
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 2
+
+//strokeWeight variables
+var Weight1 = 2;
+
+background(255)
+scale (imgScale)
+let Fill1 = color (S, B, R);
+let Fill2 = color (S, B, R);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafr);
+let St = color (0)
+
+wallpaper5:
+//translate variables
+var T = 15 // y variable in translate
+var GG = 5 // how many copys are translated
+var imgScale = 2
+
+//strokeWeight variables
+var Weight1 = 2;
+
+background(255)
+let Fill1 = color (S, B, R);
+let Fill2 = color ( G, R, S);
+let pAttern1 = (pasiLeafl);
+let pAttern2 = (pasiLeafr);
+let St = color (G, Q, R)

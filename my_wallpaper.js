@@ -15,8 +15,8 @@
 
 
 //translate variables
-var T = 25 // y variable in translate
-var GG = 7 // how many copys are translated
+var T = 15 // y variable in translate
+var GG = 5 // how many copys are translated
 var imgScale = 2
 
 //strokeWeight variables
@@ -93,10 +93,10 @@ function my_symbol() {// do not rename this function. Treat this similarly to a 
 
 scale (imgScale)
 let Fill1 = color (S, B, R);
-let Fill2 = color (S, B, R);
-let pAttern1 = (pasiLeafr);
+let Fill2 = color ( G, R, S);
+let pAttern1 = (pasiLeafl);
 let pAttern2 = (pasiLeafr);
-let St = color (0)
+let St = color (G, Q, R)
 
 
 //list of colours and their var code to make it easier
