@@ -6,9 +6,9 @@
 //let pAttern2 = (upTangles);
 
 //translate variables
-var T = 25 // y variable in translate
-var GG = 8 // how many copys are translated
-
+var T = 20 // y variable in translate
+var GG = 20 // how many copys are translated
+var imgScale = 2
 //strokeWeight variables
 var Weight1 = 1;
 
@@ -89,13 +89,16 @@ function wallpaper_background() {
 
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
+scale (imgScale)
 let Fill1 = color (R, B, R);
 let Fill2 = color (B, R, B);
 let pAttern1 = (pasiLeafl);
 let pAttern2 = (pasiLeafr);
 let St = color (S, Q, G)
 
-
+if (background = B, S, R){
+  pAttern2 = pAttern1
+}
 
 //list of colours and their var code to make it easier
 // (250, 11, 7) / (S, B, R) / RED
