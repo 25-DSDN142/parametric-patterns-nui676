@@ -13,6 +13,7 @@
 //let St = color (G, Q, R);
 //let sWitch = "YES" ;
 
+//agreed, my if statement is weak, I'll get it better at it though.
 //if (sWitch == "YES"){ pAttern1 = pAttern2}
 
 //translate variables
@@ -41,6 +42,7 @@ var G = 247;
 var B = 11;
 var S = 250;
 var Q = 147;
+//Turned colours into variables. Don't know if it's smart but it gave me more "variables"
 
 function pasiLeafl(){
 vertex (0, 0);
@@ -55,7 +57,6 @@ vertex (12.5, 12.5);
 vertex (12.5, 0);
 endShape(CLOSE);
 }
-
 function pasiLeafr(){
 beginShape();
 vertex (0, 0);
@@ -70,7 +71,6 @@ vertex (12.5, 12.5);
 vertex (0, 12.5);
 endShape(CLOSE);
 }
-
 function setup_wallpaper(pWallpaper) {
  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GRID_WALLPAPER);
@@ -83,11 +83,9 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
 }
-
 function wallpaper_background() {
   background(0); //background colour 
 }
-
 function my_symbol() {// do not rename this function. Treat this similarly to a Draw function
 
 scale (imgScale)

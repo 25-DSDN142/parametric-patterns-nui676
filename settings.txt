@@ -136,3 +136,27 @@ let pAttern1 = (pasiLeafr);
 let pAttern2 = (pasiLeafl);
 let St = color (0);
 
+wallpaper9:
+//translate variables
+var T = 25 // y variable in translate
+var GG = 7 // how many copys are translated
+var imgScale = 1
+
+//strokeWeight variables
+var Weight1 = 1;
+var Weight2 = 2;
+
+background(0)
+
+scale (imgScale)
+let Fill1 = color (S, S, R);
+let Fill2 = color (S, B, R);
+let pAttern1 = (pasiLeafr);
+let pAttern2 = (pasiLeafl);
+let St = color (G, Q, R);
+let sWitch = "YES" ;
+
+if (sWitch == "YES"){
+  pAttern1 = pAttern2
+}
+
